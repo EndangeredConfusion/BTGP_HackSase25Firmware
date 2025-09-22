@@ -1,53 +1,49 @@
-| Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C5 | ESP32-C6 | ESP32-C61 | ESP32-H2 | ESP32-H21 | ESP32-H4 | ESP32-P4 | ESP32-S2 | ESP32-S3 | Linux |
-| ----------------- | ----- | -------- | -------- | -------- | -------- | --------- | -------- | --------- | -------- | -------- | -------- | -------- | ----- |
+# SensorBroadcast (ESP32 + SCD41)
 
-# Hello World Example
+> ESP-IDF application that connects an ESP32 to Wi-Fi, polls a **Sensirion SCD41** CO₂/temperature/humidity sensor over I²C, reads a local **ADC** channel, and **broadcasts measurements via UDP**.
 
-Starts a FreeRTOS task to print "Hello World".
+[![ESP-IDF](https://img.shields.io/badge/ESP--IDF-v5.x-blue)](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/)  
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+---
 
-## How to use example
-
-Follow detailed instructions provided specifically for this example.
-
-Select the instructions depending on Espressif chip installed on your development board:
-
-- [ESP32 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/stable/get-started/index.html)
-- [ESP32-S2 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/get-started/index.html)
+## Features
+- Our device streams telemetry packets over **UDP** to configurable IP/port(s).
+Currently, at the very minimum the following hardware schematic can be followed:
+<img width="820" height="573" alt="image" src="https://github.com/user-attachments/assets/70976321-7941-4336-88d9-2caf7f9388b8" />
 
 
-## Example folder contents
+## Software Architecture
 
-The project **hello_world** contains one source file in C language [hello_world_main.c](main/hello_world_main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt` files that provide set of directives and instructions describing the project's source files and targets (executable, library, or both).
-
-Below is short explanation of remaining files in the project folder.
-
-```
-├── CMakeLists.txt
-├── pytest_hello_world.py      Python script used for automated testing
-├── main
-│   ├── CMakeLists.txt
-│   └── hello_world_main.c
-└── README.md                  This is the file you are currently reading
+```mermaid
+flowchart TD
+    A[app_main] --> B[Init ADC/I2C + NVS]
+    B --> C[Configure & Start Wi-Fi STA]
+    C --> D[Create UDP Task]
+    D --> E[Loop: Check SCD41 Data Ready]
+    E -->|If ready| F[Read CO₂, Temp, Humidity]
+    F --> G[Update globals + flag new data]
+    G --> H[UDP Task formats + sends packet]
+    E -->|Else| I[Increment fail counter / reset bus]
 ```
 
-For more information on structure and contents of ESP-IDF projects, please refer to Section [Build System](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html) of the ESP-IDF Programming Guide.
+Edit these macros `hello_world_main.c`.
+```
+#define EXAMPLE_ESP_WIFI_SSID  "YourSSID"
+#define EXAMPLE_ESP_WIFI_PASS  "YourPassword"
 
-## Troubleshooting
+#define I2C_SDA_GPIO   21
+#define I2C_SCL_GPIO   22
+#define TEST_INPUT_ADC_PIN GPIO_NUM_34
 
-* Program upload failure
+// Destination UDP IP/Port
+const char *dst_ip   = "192.168.1.100";
+uint16_t dst_port    = 12345;
+```
 
-    * Hardware connection is not correct: run `idf.py -p PORT monitor`, and reboot your board to see if there are any output logs.
-    * The baud rate for downloading is too high: lower your baud rate in the `menuconfig` menu, and try again.
-
-## Technical support and feedback
-
-Please use the following feedback channels:
-
-* For technical queries, go to the [esp32.com](https://esp32.com/) forum
-* For a feature request or bug report, create a [GitHub issue](https://github.com/espressif/esp-idf/issues)
-
-We will get back to you as soon as possible.
+To run use the ESP idf to build in the classical manner. The main file is named `hello_world_main.c`, the other 2 are availiable for individual feature testing.:
+```
+idf.py set-target esp32
+idf.py menuconfig   # (optional) adjust configs
+idf.py build
+idf.py -p /dev/ttyUSB0 flash monitor
+```
