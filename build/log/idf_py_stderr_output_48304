@@ -1,0 +1,16 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/cu.usbserial-0001 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400818dd: panic_abort at /Users/kaeshev/esp/esp-idf/components/esp_system/panic.c:454
+0x40085a51: esp_system_abort at /Users/kaeshev/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008687a: vApplicationStackOverflowHook at /Users/kaeshev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+0x400878ef: vTaskSwitchContext at /Users/kaeshev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x40086984: _frxt_dispatch at /Users/kaeshev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x40086936: _frxt_int_exit at /Users/kaeshev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6a7b: app_main at /Users/kaeshev/sasehack25/esp/SensorBroadcast/main/i2c_test.c:171 (discriminator 1)
+[0m
+[0m

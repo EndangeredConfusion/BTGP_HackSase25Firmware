@@ -1,0 +1,15 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/cu.usbserial-0001 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400850c2: esp_crosscore_isr at /Users/kaeshev/esp/esp-idf/components/esp_system/crosscore_int.c:73
+0x4008343d: _xt_lowint1 at /Users/kaeshev/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d8778: udp_send_task at /Users/kaeshev/sasehack25/esp/SensorBroadcast/main/hello_world_main.c:121
+0x4008a4f5: vPortTaskWrapper at /Users/kaeshev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x400850c2: esp_crosscore_isr at /Users/kaeshev/esp/esp-idf/components/esp_system/crosscore_int.c:73
+0x4008343d: _xt_lowint1 at /Users/kaeshev/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d8775: udp_send_task at /Users/kaeshev/sasehack25/esp/SensorBroadcast/main/hello_world_main.c:117
+0x4008a4f5: vPortTaskWrapper at /Users/kaeshev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0m

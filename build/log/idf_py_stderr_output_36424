@@ -1,0 +1,33 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/cu.usbserial-0001 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d8e3d: app_main at /Users/kaeshev/sasehack25/esp/SensorBroadcast/main/wifi_test.c:353 (discriminator 1)
+[0m
+[0;33m--- 0x400899cf: _esp_error_check_failed at /Users/kaeshev/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081b0d: panic_abort at /Users/kaeshev/esp/esp-idf/components/esp_system/panic.c:454
+0x400899d9: esp_system_abort at /Users/kaeshev/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4009164d: abort at /Users/kaeshev/esp/esp-idf/components/newlib/abort.c:38
+0x400899cf: _esp_error_check_failed at /Users/kaeshev/esp/esp-idf/components/esp_system/esp_err.c:49
+0x400d8e3d: app_main at /Users/kaeshev/sasehack25/esp/SensorBroadcast/main/wifi_test.c:353 (discriminator 1)
+0x40155ef7: main_task at /Users/kaeshev/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a4c1: vPortTaskWrapper at /Users/kaeshev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d8e3d: app_main at /Users/kaeshev/sasehack25/esp/SensorBroadcast/main/wifi_test.c:353 (discriminator 1)
+[0m
+[0;33m--- 0x400899cf: _esp_error_check_failed at /Users/kaeshev/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081b0d: panic_abort at /Users/kaeshev/esp/esp-idf/components/esp_system/panic.c:454
+0x400899d9: esp_system_abort at /Users/kaeshev/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4009164d: abort at /Users/kaeshev/esp/esp-idf/components/newlib/abort.c:38
+0x400899cf: _esp_error_check_failed at /Users/kaeshev/esp/esp-idf/components/esp_system/esp_err.c:49
+0x400d8e3d: app_main at /Users/kaeshev/sasehack25/esp/SensorBroadcast/main/wifi_test.c:353 (discriminator 1)
+0x40155ef7: main_task at /Users/kaeshev/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a4c1: vPortTaskWrapper at /Users/kaeshev/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

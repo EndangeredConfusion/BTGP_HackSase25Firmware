@@ -1,0 +1,1403 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (338) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (405) app_init: Application information:[0m
+[0;32mI (405) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (413) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (418) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (498) main_task: Started on CPU0[0m
+[0;32mI (508) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2508) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2508) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2508) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2518) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2518) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2528) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2538) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2538) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2548) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3078) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3078) SCD41: started periodic[0m
+[1;31mE (3078) i2c.master: I2C software timeout[0m
+[1;31mE (3078) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3078) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (3077) SCD41: Serial: 708f-ef07-3bc3[0m
+[0;32mI (3077) SCD41: started periodic[0m
+[1;31mE (3077) i2c.master: I2C software timeout[0m
+[1;31mE (3077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (3077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x103 (ESP_ERR_INVALID_STATE) at 0x400d8fff
+file: "./main/wifi_test.c" line 410
+func: app_main
+expression: scd41_send_cmd(CMD_REINIT)
+
+abort() was called at PC 0x40089a03 on core 0
+
+
+Backtrace: 0x40081b15:0x3ffba3f0 0x40089a0d:0x3ffba410 0x40091681:0x3ffba430 0x40089a03:0x3ffba4a0 0x400d8fff:0x3ffba4d0 0x40156113:0x3ffba500 0x4008a4f5:0x3ffba530
+
+
+
+
+ELF file SHA256: dd0b738d9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b478h (111736) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b4a0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b4c4 vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f424 vaddr=40080000 size=00bf4h (  3060) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87edch (556764) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7f04 vaddr=40080bf4 size=16e94h ( 93844) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 20:38:25[0m
+[0;32mI (417) app_init: ELF file SHA256:  dd0b738d9...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8200 len 00027E00 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+init i2c
+[1;31mE (2507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2517) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2517) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[1;31mE (2537) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2537) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m

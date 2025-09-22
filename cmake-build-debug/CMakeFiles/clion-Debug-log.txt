@@ -1,0 +1,12 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/kaeshev/sasehack25/esp/SensorBroadcast -B /Users/kaeshev/sasehack25/esp/SensorBroadcast/cmake-build-debug
+CMake Error at CMakeLists.txt:5 (include):
+  include could not find requested file:
+
+    /tools/cmake/project.cmake
+
+
+CMake Error at CMakeLists.txt:7 (idf_build_set_property):
+  Unknown CMake command "idf_build_set_property".
+
+
+-- Configuring incomplete, errors occurred!

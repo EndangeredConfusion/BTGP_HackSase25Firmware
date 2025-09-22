@@ -1,0 +1,1974 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b2d0h (111312) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b2f8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b31c vaddr=3ffb0000 size=03f58h ( 16216) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f27c vaddr=40080000 size=00d9ch (  3484) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87d1ch (556316) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7d44 vaddr=40080d9c size=16cech ( 93420) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 21 2025 20:00:06[0m
+[0;32mI (417) app_init: ELF file SHA256:  cc48db4ac...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB8210 len 00027DF0 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A88 len 00008578 (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[0;33mW (507) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+init i2c
+probed
+[0;32mI (3017) wifi station: stop_periodic returned ESP_OK[0m
+[0;32mI (3537) wifi station: stop_periodic returned ESP_OK[0m
+[0;32mI (3557) wifi station: start_periodic returned ESP_OK[0m
+[0;32mI (3577) wifi station: ESP_WIFI_MODE_STA[0m
+[0;32mI (3587) wifi:wifi driver task: 3ffc0688, prio:23, stack:6656, core=0[0m
+[0;32mI (3597) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (3597) wifi:wifi certification version: v7.0[0m
+[0;32mI (3597) wifi:config NVS flash: enabled[0m
+[0;32mI (3597) wifi:config nano formatting: disabled[0m
+[0;32mI (3597) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (3607) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (3607) wifi:Init management short buffer num: 32[0m
+[0;32mI (3617) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (3617) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (3627) wifi:Init static rx buffer num: 10[0m
+[0;32mI (3627) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (3637) wifi_init: rx ba win: 6[0m
+[0;32mI (3637) wifi_init: accept mbox: 6[0m
+[0;32mI (3637) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3637) wifi_init: udp mbox: 6[0m
+[0;32mI (3647) wifi_init: tcp mbox: 6[0m
+[0;32mI (3647) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3647) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3657) wifi_init: tcp mss: 1440[0m
+[0;32mI (3657) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3657) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (3667) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (3747) wifi:mode : sta (38:18:2b:8a:48:d8)[0m
+[0;32mI (3747) wifi:enable tsf[0m
+[0;32mI (3757) wifi station: wifi_init_sta finished.[0m
+[0;32mI (3767) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3767) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3777) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3787) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3787) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (3807) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3807) wifi station: retry to connect to the AP[0m
+[0;32mI (3807) wifi station: connect to the AP fail[0m
+[0;32mI (6227) wifi station: retry to connect to the AP[0m
+[0;32mI (6227) wifi station: connect to the AP fail[0m
+[0;32mI (6227) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6237) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (6247) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (6247) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (6277) wifi:connected with TP-Link_1F14, aid = 42, channel 8, BW20, bssid = 9c:53:22:c5:1f:13[0m
+[0;32mI (6277) wifi:security: WPA2-PSK, phy: bgn, rssi: -43[0m
+[0;32mI (6287) wifi:pm start, type: 1[0m
+
+[0;32mI (6287) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (6297) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (6307) wifi:<ba-add>idx:0 (ifx:0, 9c:53:22:c5:1f:13), tid:6, ssn:0, winSize:64[0m
+[0;32mI (7317) esp_netif_handlers: sta ip: 192.168.0.58, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (7317) wifi station: got ip:192.168.0.58[0m
+[0;32mI (7317) wifi station: connected to ap SSID:TP-Link_1F14 password:65291221[0m
+[0;32mI (8207) wifi station: read measurement returned ESP_OK[0m
+co2: 979,	 temp: 30.51,	 humidity: 52.79
+raw adc reading 358I (8217) wifi station: sendto ok, bytes=70
+[0;32mI (8257) wifi:<ba-add>idx:1 (ifx:0, 9c:53:22:c5:1f:13), tid:0, ssn:0, winSize:64[0m
+[0;32mI (12907) wifi station: read measurement returned ESP_OK[0m
+co2: 975,	 temp: 30.15,	 humidity: 53.49
+raw adc reading 378I (12917) wifi station: sendto ok, bytes=70
+[0;32mI (17727) wifi station: read measurement returned ESP_OK[0m
+co2: 972,	 temp: 29.88,	 humidity: 54.34
+raw adc reading 337I (17737) wifi station: sendto ok, bytes=70
+[0;32mI (22427) wifi station: read measurement returned ESP_OK[0m
+co2: 968,	 temp: 29.62,	 humidity: 55.06
+raw adc reading 355I (22437) wifi station: sendto ok, bytes=70
+[0;32mI (27247) wifi station: read measurement returned ESP_OK[0m
+co2: 968,	 temp: 29.39,	 humidity: 55.87
+raw adc reading 304I (27257) wifi station: sendto ok, bytes=70
+[0;32mI (31947) wifi station: read measurement returned ESP_OK[0m
+co2: 963,	 temp: 29.16,	 humidity: 56.67
+raw adc reading 324I (31957) wifi station: sendto ok, bytes=70
+[0;32mI (36767) wifi station: read measurement returned ESP_OK[0m
+co2: 959,	 temp: 28.91,	 humidity: 57.26
+raw adc reading 338I (36777) wifi station: sendto ok, bytes=70
+[0;32mI (41467) wifi station: read measurement returned ESP_OK[0m
+co2: 960,	 temp: 28.74,	 humidity: 57.79
+raw adc reading 347I (41477) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (44567) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (44567) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (44567) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (44597) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (46317) wifi station: read measurement returned ESP_OK[0m
+co2: 999,	 temp: 28.51,	 humidity: 58.34
+raw adc reading 398I (46337) wifi station: sendto ok, bytes=70
+[0;32mI (51017) wifi station: read measurement returned ESP_OK[0m
+co2: 1065,	 temp: 28.25,	 humidity: 59.40
+raw adc reading 442I (51037) wifi station: sendto ok, bytes=71
+[0;32mI (55717) wifi station: read measurement returned ESP_OK[0m
+co2: 1138,	 temp: 28.08,	 humidity: 60.08
+raw adc reading 364I (55737) wifi station: sendto ok, bytes=71
+[0;32mI (60537) wifi station: read measurement returned ESP_OK[0m
+co2: 1180,	 temp: 27.95,	 humidity: 60.61
+raw adc reading 382I (60557) wifi station: sendto ok, bytes=71
+[0;32mI (65237) wifi station: read measurement returned ESP_OK[0m
+co2: 1187,	 temp: 27.83,	 humidity: 60.93
+raw adc reading 381I (65257) wifi station: sendto ok, bytes=71
+[0;32mI (70057) wifi station: read measurement returned ESP_OK[0m
+co2: 1191,	 temp: 27.78,	 humidity: 61.28
+raw adc reading 338I (70077) wifi station: sendto ok, bytes=71
+[0;32mI (74757) wifi station: read measurement returned ESP_OK[0m
+co2: 1198,	 temp: 27.67,	 humidity: 61.80
+raw adc reading 392I (74777) wifi station: sendto ok, bytes=71
+[0;32mI (79577) wifi station: read measurement returned ESP_OK[0m
+co2: 1202,	 temp: 27.55,	 humidity: 62.35
+raw adc reading 370I (79597) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (81837) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (81837) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (81837) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (81867) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (84307) wifi station: read measurement returned ESP_OK[0m
+co2: 1205,	 temp: 27.48,	 humidity: 62.56
+raw adc reading 333I (84317) wifi station: sendto ok, bytes=71
+[0;32mI (89127) wifi station: read measurement returned ESP_OK[0m
+co2: 1203,	 temp: 27.41,	 humidity: 62.73
+raw adc reading 368I (89137) wifi station: sendto ok, bytes=71
+[0;32mI (93827) wifi station: read measurement returned ESP_OK[0m
+co2: 1201,	 temp: 27.36,	 humidity: 62.81
+raw adc reading 368I (93837) wifi station: sendto ok, bytes=71
+[0;32mI (98527) wifi station: read measurement returned ESP_OK[0m
+co2: 1191,	 temp: 27.32,	 humidity: 62.95
+raw adc reading 368I (98537) wifi station: sendto ok, bytes=71
+[0;32mI (103347) wifi station: read measurement returned ESP_OK[0m
+co2: 1170,	 temp: 27.27,	 humidity: 63.18
+raw adc reading 363I (103357) wifi station: sendto ok, bytes=71
+[0;32mI (108047) wifi station: read measurement returned ESP_OK[0m
+co2: 1159,	 temp: 27.23,	 humidity: 63.41
+raw adc reading 368I (108057) wifi station: sendto ok, bytes=71
+[0;32mI (112867) wifi station: read measurement returned ESP_OK[0m
+co2: 1152,	 temp: 27.18,	 humidity: 63.63
+raw adc reading 362I (112877) wifi station: sendto ok, bytes=71
+[0;32mI (117567) wifi station: read measurement returned ESP_OK[0m
+co2: 1143,	 temp: 27.12,	 humidity: 64.10
+raw adc reading 357I (117577) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (119107) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (119107) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (119107) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (119137) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (122417) wifi station: read measurement returned ESP_OK[0m
+co2: 1134,	 temp: 27.09,	 humidity: 64.45
+raw adc reading 365I (122437) wifi station: sendto ok, bytes=71
+[0;32mI (127117) wifi station: read measurement returned ESP_OK[0m
+co2: 1124,	 temp: 27.05,	 humidity: 64.64
+raw adc reading 359I (127137) wifi station: sendto ok, bytes=71
+[0;32mI (131937) wifi station: read measurement returned ESP_OK[0m
+co2: 1113,	 temp: 26.96,	 humidity: 64.65
+raw adc reading 363I (131957) wifi station: sendto ok, bytes=71
+[0;32mI (136637) wifi station: read measurement returned ESP_OK[0m
+co2: 1101,	 temp: 26.96,	 humidity: 64.84
+raw adc reading 372I (136657) wifi station: sendto ok, bytes=71
+[0;32mI (141337) wifi station: read measurement returned ESP_OK[0m
+co2: 1091,	 temp: 26.93,	 humidity: 64.83
+raw adc reading 368I (141357) wifi station: sendto ok, bytes=71
+[0;32mI (146157) wifi station: read measurement returned ESP_OK[0m
+co2: 1080,	 temp: 26.91,	 humidity: 64.87
+raw adc reading 327I (146177) wifi station: sendto ok, bytes=71
+[0;32mI (150857) wifi station: read measurement returned ESP_OK[0m
+co2: 1069,	 temp: 26.87,	 humidity: 65.00
+raw adc reading 340I (150877) wifi station: sendto ok, bytes=71
+[0;32mI (155677) wifi station: read measurement returned ESP_OK[0m
+co2: 1067,	 temp: 26.85,	 humidity: 65.06
+raw adc reading 341I (155697) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (156377) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (156377) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (156377) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (156407) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (160407) wifi station: read measurement returned ESP_OK[0m
+co2: 1065,	 temp: 26.82,	 humidity: 65.13
+raw adc reading 323I (160417) wifi station: sendto ok, bytes=71
+[0;32mI (165227) wifi station: read measurement returned ESP_OK[0m
+co2: 1057,	 temp: 26.79,	 humidity: 65.21
+raw adc reading 352I (165237) wifi station: sendto ok, bytes=71
+[0;32mI (169927) wifi station: read measurement returned ESP_OK[0m
+co2: 1053,	 temp: 26.75,	 humidity: 65.16
+raw adc reading 355I (169937) wifi station: sendto ok, bytes=71
+[0;32mI (174747) wifi station: read measurement returned ESP_OK[0m
+co2: 1046,	 temp: 26.71,	 humidity: 65.10
+raw adc reading 369I (174757) wifi station: sendto ok, bytes=71
+[0;32mI (179447) wifi station: read measurement returned ESP_OK[0m
+co2: 1037,	 temp: 26.70,	 humidity: 65.20
+raw adc reading 350I (179457) wifi station: sendto ok, bytes=71
+[0;32mI (184147) wifi station: read measurement returned ESP_OK[0m
+co2: 1031,	 temp: 26.69,	 humidity: 65.23
+raw adc reading 336I (184157) wifi station: sendto ok, bytes=71
+[0;32mI (188967) wifi station: read measurement returned ESP_OK[0m
+co2: 1024,	 temp: 26.66,	 humidity: 65.29
+raw adc reading 347I (188977) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (193507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (193507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (193507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (193537) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (193697) wifi station: read measurement returned ESP_OK[0m
+co2: 1020,	 temp: 26.61,	 humidity: 65.40
+raw adc reading 348I (193717) wifi station: sendto ok, bytes=71
+[0;32mI (198517) wifi station: read measurement returned ESP_OK[0m
+co2: 1017,	 temp: 26.63,	 humidity: 65.63
+raw adc reading 357I (198537) wifi station: sendto ok, bytes=71
+[0;32mI (203217) wifi station: read measurement returned ESP_OK[0m
+co2: 1017,	 temp: 26.60,	 humidity: 65.91
+raw adc reading 314I (203237) wifi station: sendto ok, bytes=71
+[0;32mI (208037) wifi station: read measurement returned ESP_OK[0m
+co2: 1017,	 temp: 26.59,	 humidity: 66.01
+raw adc reading 351I (208057) wifi station: sendto ok, bytes=71
+[0;32mI (212737) wifi station: read measurement returned ESP_OK[0m
+co2: 1017,	 temp: 26.60,	 humidity: 65.82
+raw adc reading 381I (212757) wifi station: sendto ok, bytes=71
+[0;32mI (217557) wifi station: read measurement returned ESP_OK[0m
+co2: 1020,	 temp: 26.61,	 humidity: 65.73
+raw adc reading 357I (217577) wifi station: sendto ok, bytes=71
+[0;32mI (222257) wifi station: read measurement returned ESP_OK[0m
+co2: 1033,	 temp: 26.63,	 humidity: 65.62
+raw adc reading 350I (222277) wifi station: sendto ok, bytes=71
+[0;32mI (226957) wifi station: read measurement returned ESP_OK[0m
+co2: 1034,	 temp: 26.61,	 humidity: 65.62
+raw adc reading 369I (226977) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (230777) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (230777) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (230777) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (230807) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (231807) wifi station: read measurement returned ESP_OK[0m
+co2: 1039,	 temp: 26.63,	 humidity: 65.59
+raw adc reading 350I (231817) wifi station: sendto ok, bytes=71
+[0;32mI (236507) wifi station: read measurement returned ESP_OK[0m
+co2: 1173,	 temp: 26.62,	 humidity: 65.68
+raw adc reading 354I (236517) wifi station: sendto ok, bytes=71
+[0;32mI (241327) wifi station: read measurement returned ESP_OK[0m
+co2: 1170,	 temp: 26.65,	 humidity: 66.91
+raw adc reading 324I (241337) wifi station: sendto ok, bytes=71
+[0;32mI (246027) wifi station: read measurement returned ESP_OK[0m
+co2: 1162,	 temp: 26.65,	 humidity: 67.15
+raw adc reading 330I (246037) wifi station: sendto ok, bytes=71
+[0;32mI (250847) wifi station: read measurement returned ESP_OK[0m
+co2: 1154,	 temp: 26.63,	 humidity: 66.89
+raw adc reading 359I (250857) wifi station: sendto ok, bytes=71
+[0;32mI (255547) wifi station: read measurement returned ESP_OK[0m
+co2: 1144,	 temp: 26.63,	 humidity: 66.75
+raw adc reading 358I (255557) wifi station: sendto ok, bytes=71
+[0;32mI (260367) wifi station: read measurement returned ESP_OK[0m
+co2: 1139,	 temp: 26.60,	 humidity: 66.76
+raw adc reading 316I (260377) wifi station: sendto ok, bytes=71
+[0;32mI (265067) wifi station: read measurement returned ESP_OK[0m
+co2: 1136,	 temp: 26.58,	 humidity: 66.51
+raw adc reading 347I (265077) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (268047) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (268047) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (268047) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (268077) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (269797) wifi station: read measurement returned ESP_OK[0m
+co2: 1128,	 temp: 26.57,	 humidity: 66.32
+raw adc reading 355I (269817) wifi station: sendto ok, bytes=71
+[0;32mI (274617) wifi station: read measurement returned ESP_OK[0m
+co2: 1111,	 temp: 26.55,	 humidity: 66.10
+raw adc reading 320I (274637) wifi station: sendto ok, bytes=71
+[0;32mI (279317) wifi station: read measurement returned ESP_OK[0m
+co2: 1081,	 temp: 26.53,	 humidity: 66.02
+raw adc reading 359I (279337) wifi station: sendto ok, bytes=71
+[0;32mI (284137) wifi station: read measurement returned ESP_OK[0m
+co2: 1073,	 temp: 26.49,	 humidity: 65.95
+raw adc reading 352I (284157) wifi station: sendto ok, bytes=71
+[0;32mI (288837) wifi station: read measurement returned ESP_OK[0m
+co2: 1068,	 temp: 26.54,	 humidity: 65.92
+raw adc reading 329I (288857) wifi station: sendto ok, bytes=71
+[0;32mI (293657) wifi station: read measurement returned ESP_OK[0m
+co2: 1063,	 temp: 26.57,	 humidity: 65.83
+raw adc reading 354I (293677) wifi station: sendto ok, bytes=71
+[0;32mI (298357) wifi station: read measurement returned ESP_OK[0m
+co2: 1054,	 temp: 26.61,	 humidity: 65.94
+raw adc reading 368I (298377) wifi station: sendto ok, bytes=71
+[0;32mI (303177) wifi station: read measurement returned ESP_OK[0m
+co2: 1050,	 temp: 26.63,	 humidity: 66.09
+raw adc reading 333I (303197) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (305317) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (305317) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (305317) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (305347) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (307907) wifi station: read measurement returned ESP_OK[0m
+co2: 1044,	 temp: 26.66,	 humidity: 66.09
+raw adc reading 349I (307917) wifi station: sendto ok, bytes=71
+[0;32mI (312607) wifi station: read measurement returned ESP_OK[0m
+co2: 1037,	 temp: 26.67,	 humidity: 65.99
+raw adc reading 327I (312617) wifi station: sendto ok, bytes=71
+[0;32mI (317427) wifi station: read measurement returned ESP_OK[0m
+co2: 1034,	 temp: 26.70,	 humidity: 65.89
+raw adc reading 363I (317437) wifi station: sendto ok, bytes=71
+[0;32mI (322127) wifi station: read measurement returned ESP_OK[0m
+co2: 1028,	 temp: 26.71,	 humidity: 65.81
+raw adc reading 362I (322137) wifi station: sendto ok, bytes=71
+[0;32mI (326947) wifi station: read measurement returned ESP_OK[0m
+co2: 1021,	 temp: 26.67,	 humidity: 65.71
+raw adc reading 336I (326957) wifi station: sendto ok, bytes=71
+[0;32mI (331647) wifi station: read measurement returned ESP_OK[0m
+co2: 1017,	 temp: 26.68,	 humidity: 65.62
+raw adc reading 354I (331657) wifi station: sendto ok, bytes=71
+[0;32mI (336467) wifi station: read measurement returned ESP_OK[0m
+co2: 1016,	 temp: 26.68,	 humidity: 65.64
+raw adc reading 315I (336477) wifi station: sendto ok, bytes=71
+[0;32mI (341167) wifi station: read measurement returned ESP_OK[0m
+co2: 1015,	 temp: 26.72,	 humidity: 65.63
+raw adc reading 385I (341177) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (342587) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (342587) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (342587) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (342617) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (345897) wifi station: read measurement returned ESP_OK[0m
+co2: 1015,	 temp: 26.69,	 humidity: 65.72
+raw adc reading 329I (345917) wifi station: sendto ok, bytes=71
+[0;32mI (350717) wifi station: read measurement returned ESP_OK[0m
+co2: 1022,	 temp: 26.67,	 humidity: 65.86
+raw adc reading 316I (350737) wifi station: sendto ok, bytes=71
+[0;32mI (355417) wifi station: read measurement returned ESP_OK[0m
+co2: 1033,	 temp: 26.63,	 humidity: 65.91
+raw adc reading 313I (355437) wifi station: sendto ok, bytes=71
+[0;32mI (360237) wifi station: read measurement returned ESP_OK[0m
+co2: 1035,	 temp: 26.62,	 humidity: 65.90
+raw adc reading 361I (360257) wifi station: sendto ok, bytes=71
+[0;32mI (364937) wifi station: read measurement returned ESP_OK[0m
+co2: 1036,	 temp: 26.61,	 humidity: 65.78
+raw adc reading 308I (364957) wifi station: sendto ok, bytes=71
+[0;32mI (369757) wifi station: read measurement returned ESP_OK[0m
+co2: 1042,	 temp: 26.62,	 humidity: 65.72
+raw adc reading 336I (369777) wifi station: sendto ok, bytes=71
+[0;32mI (374457) wifi station: read measurement returned ESP_OK[0m
+co2: 1047,	 temp: 26.64,	 humidity: 65.66
+raw adc reading 352I (374477) wifi station: sendto ok, bytes=71
+[0;32mI (379277) wifi station: read measurement returned ESP_OK[0m
+co2: 1047,	 temp: 26.67,	 humidity: 65.67
+raw adc reading 347I (379297) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (379857) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (379857) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (379857) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (379887) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (384007) wifi station: read measurement returned ESP_OK[0m
+co2: 1045,	 temp: 26.67,	 humidity: 65.63
+raw adc reading 320I (384017) wifi station: sendto ok, bytes=71
+[0;32mI (388707) wifi station: read measurement returned ESP_OK[0m
+co2: 1039,	 temp: 26.64,	 humidity: 65.62
+raw adc reading 367I (388717) wifi station: sendto ok, bytes=71
+[0;32mI (393527) wifi station: read measurement returned ESP_OK[0m
+co2: 1028,	 temp: 26.63,	 humidity: 65.54
+raw adc reading 304I (393537) wifi station: sendto ok, bytes=71
+[0;32mI (398227) wifi station: read measurement returned ESP_OK[0m
+co2: 1016,	 temp: 26.64,	 humidity: 65.59
+raw adc reading 331I (398237) wifi station: sendto ok, bytes=71
+[0;32mI (403047) wifi station: read measurement returned ESP_OK[0m
+co2: 1014,	 temp: 26.63,	 humidity: 65.52
+raw adc reading 351I (403057) wifi station: sendto ok, bytes=71
+[0;32mI (407747) wifi station: read measurement returned ESP_OK[0m
+co2: 1014,	 temp: 26.64,	 humidity: 65.50
+raw adc reading 304I (407757) wifi station: sendto ok, bytes=71
+[0;32mI (412567) wifi station: read measurement returned ESP_OK[0m
+co2: 1010,	 temp: 26.63,	 humidity: 65.52
+raw adc reading 308I (412577) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (416987) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (416987) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (416987) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (417017) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (417297) wifi station: read measurement returned ESP_OK[0m
+co2: 1011,	 temp: 26.62,	 humidity: 65.52
+raw adc reading 309I (417317) wifi station: sendto ok, bytes=71
+[0;32mI (421997) wifi station: read measurement returned ESP_OK[0m
+co2: 1010,	 temp: 26.61,	 humidity: 65.63
+raw adc reading 321I (422017) wifi station: sendto ok, bytes=71
+[0;32mI (426817) wifi station: read measurement returned ESP_OK[0m
+co2: 1007,	 temp: 26.61,	 humidity: 65.69
+raw adc reading 354I (426837) wifi station: sendto ok, bytes=71
+[0;32mI (431517) wifi station: read measurement returned ESP_OK[0m
+co2: 1008,	 temp: 26.62,	 humidity: 65.79
+raw adc reading 337I (431537) wifi station: sendto ok, bytes=71
+[0;32mI (436337) wifi station: read measurement returned ESP_OK[0m
+co2: 1007,	 temp: 26.62,	 humidity: 65.92
+raw adc reading 317I (436357) wifi station: sendto ok, bytes=71
+[0;32mI (441037) wifi station: read measurement returned ESP_OK[0m
+co2: 1007,	 temp: 26.61,	 humidity: 65.91
+raw adc reading 351I (441057) wifi station: sendto ok, bytes=71
+[0;32mI (445857) wifi station: read measurement returned ESP_OK[0m
+co2: 1007,	 temp: 26.61,	 humidity: 66.05
+raw adc reading 339I (445877) wifi station: sendto ok, bytes=71
+[0;32mI (450557) wifi station: read measurement returned ESP_OK[0m
+co2: 1007,	 temp: 26.59,	 humidity: 66.16
+raw adc reading 354I (450577) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (454257) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (454257) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (454257) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (454287) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (455407) wifi station: read measurement returned ESP_OK[0m
+co2: 1006,	 temp: 26.59,	 humidity: 66.09
+raw adc reading 343I (455417) wifi station: sendto ok, bytes=71
+[0;32mI (460107) wifi station: read measurement returned ESP_OK[0m
+co2: 1005,	 temp: 26.59,	 humidity: 66.05
+raw adc reading 357I (460117) wifi station: sendto ok, bytes=71
+[0;32mI (464807) wifi station: read measurement returned ESP_OK[0m
+co2: 1004,	 temp: 26.60,	 humidity: 65.99
+raw adc reading 324I (464817) wifi station: sendto ok, bytes=71
+[0;32mI (469627) wifi station: read measurement returned ESP_OK[0m
+co2: 1005,	 temp: 26.60,	 humidity: 65.91
+raw adc reading 347I (469637) wifi station: sendto ok, bytes=71
+[0;32mI (474327) wifi station: read measurement returned ESP_OK[0m
+co2: 1004,	 temp: 26.62,	 humidity: 65.83
+raw adc reading 321I (474337) wifi station: sendto ok, bytes=71
+[0;32mI (479147) wifi station: read measurement returned ESP_OK[0m
+co2: 1003,	 temp: 26.61,	 humidity: 65.80
+raw adc reading 343I (479157) wifi station: sendto ok, bytes=71
+[0;32mI (483847) wifi station: read measurement returned ESP_OK[0m
+co2: 1003,	 temp: 26.63,	 humidity: 65.81
+raw adc reading 371I (483857) wifi station: sendto ok, bytes=71
+[0;32mI (488667) wifi station: read measurement returned ESP_OK[0m
+co2: 996,	 temp: 26.62,	 humidity: 65.76
+raw adc reading 306I (488677) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (491527) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (491527) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (491527) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (491557) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (493397) wifi station: read measurement returned ESP_OK[0m
+co2: 992,	 temp: 26.66,	 humidity: 65.84
+raw adc reading 320I (493417) wifi station: sendto ok, bytes=70
+[0;32mI (498217) wifi station: read measurement returned ESP_OK[0m
+co2: 987,	 temp: 26.63,	 humidity: 65.89
+raw adc reading 350I (498237) wifi station: sendto ok, bytes=70
+[0;32mI (502917) wifi station: read measurement returned ESP_OK[0m
+co2: 985,	 temp: 26.63,	 humidity: 65.86
+raw adc reading 358I (502937) wifi station: sendto ok, bytes=70
+[0;32mI (507617) wifi station: read measurement returned ESP_OK[0m
+co2: 985,	 temp: 26.65,	 humidity: 65.92
+raw adc reading 358I (507637) wifi station: sendto ok, bytes=70
+[0;32mI (512437) wifi station: read measurement returned ESP_OK[0m
+co2: 985,	 temp: 26.63,	 humidity: 66.05
+raw adc reading 348I (512457) wifi station: sendto ok, bytes=70
+[0;32mI (517137) wifi station: read measurement returned ESP_OK[0m
+co2: 984,	 temp: 26.62,	 humidity: 66.01
+raw adc reading 340I (517157) wifi station: sendto ok, bytes=70
+[0;32mI (521957) wifi station: read measurement returned ESP_OK[0m
+co2: 983,	 temp: 26.63,	 humidity: 66.03
+raw adc reading 334I (521977) wifi station: sendto ok, bytes=70
+[0;32mI (526657) wifi station: read measurement returned ESP_OK[0m
+co2: 981,	 temp: 26.58,	 humidity: 65.90
+raw adc reading 331I (526677) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (528797) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (528797) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (528797) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (528827) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (531507) wifi station: read measurement returned ESP_OK[0m
+co2: 980,	 temp: 26.58,	 humidity: 65.90
+raw adc reading 343I (531517) wifi station: sendto ok, bytes=70
+[0;32mI (536207) wifi station: read measurement returned ESP_OK[0m
+co2: 980,	 temp: 26.56,	 humidity: 65.90
+raw adc reading 351I (536217) wifi station: sendto ok, bytes=70
+[0;32mI (541027) wifi station: read measurement returned ESP_OK[0m
+co2: 980,	 temp: 26.58,	 humidity: 66.15
+raw adc reading 340I (541037) wifi station: sendto ok, bytes=70
+[0;32mI (545727) wifi station: read measurement returned ESP_OK[0m
+co2: 980,	 temp: 26.58,	 humidity: 66.23
+raw adc reading 334I (545737) wifi station: sendto ok, bytes=70
+[0;32mI (550427) wifi station: read measurement returned ESP_OK[0m
+co2: 980,	 temp: 26.56,	 humidity: 66.16
+raw adc reading 341I (550437) wifi station: sendto ok, bytes=70
+[0;32mI (555247) wifi station: read measurement returned ESP_OK[0m
+co2: 979,	 temp: 26.52,	 humidity: 66.05
+raw adc reading 336I (555257) wifi station: sendto ok, bytes=70
+[0;32mI (559947) wifi station: read measurement returned ESP_OK[0m
+co2: 984,	 temp: 26.50,	 humidity: 65.96
+raw adc reading 328I (559957) wifi station: sendto ok, bytes=70
+[0;32mI (564767) wifi station: read measurement returned ESP_OK[0m
+co2: 985,	 temp: 26.46,	 humidity: 65.88
+raw adc reading 367I (564777) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (566067) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (566067) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (566067) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (566097) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (569497) wifi station: read measurement returned ESP_OK[0m
+co2: 985,	 temp: 26.44,	 humidity: 65.88
+raw adc reading 324I (569517) wifi station: sendto ok, bytes=70
+[0;32mI (574317) wifi station: read measurement returned ESP_OK[0m
+co2: 984,	 temp: 26.47,	 humidity: 65.83
+raw adc reading 351I (574337) wifi station: sendto ok, bytes=70
+[0;32mI (579017) wifi station: read measurement returned ESP_OK[0m
+co2: 983,	 temp: 26.44,	 humidity: 65.86
+raw adc reading 317I (579037) wifi station: sendto ok, bytes=70
+[0;32mI (583837) wifi station: read measurement returned ESP_OK[0m
+co2: 982,	 temp: 26.44,	 humidity: 65.91
+raw adc reading 336I (583857) wifi station: sendto ok, bytes=70
+[0;32mI (588537) wifi station: read measurement returned ESP_OK[0m
+co2: 979,	 temp: 26.40,	 humidity: 65.88
+raw adc reading 336I (588557) wifi station: sendto ok, bytes=70
+[0;32mI (593237) wifi station: read measurement returned ESP_OK[0m
+co2: 973,	 temp: 26.40,	 humidity: 65.88
+raw adc reading 345I (593257) wifi station: sendto ok, bytes=70
+[0;32mI (598057) wifi station: read measurement returned ESP_OK[0m
+co2: 972,	 temp: 26.39,	 humidity: 65.84
+raw adc reading 299I (598077) wifi station: sendto ok, bytes=70
+[0;32mI (602757) wifi station: read measurement returned ESP_OK[0m
+co2: 972,	 temp: 26.40,	 humidity: 65.74
+raw adc reading 347I (602777) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (603337) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (603337) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (603337) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (603367) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (607607) wifi station: read measurement returned ESP_OK[0m
+co2: 971,	 temp: 26.39,	 humidity: 65.76
+raw adc reading 306I (607617) wifi station: sendto ok, bytes=70
+[0;32mI (612307) wifi station: read measurement returned ESP_OK[0m
+co2: 970,	 temp: 26.39,	 humidity: 65.74
+raw adc reading 335I (612317) wifi station: sendto ok, bytes=70
+[0;32mI (617127) wifi station: read measurement returned ESP_OK[0m
+co2: 966,	 temp: 26.38,	 humidity: 65.69
+raw adc reading 359I (617137) wifi station: sendto ok, bytes=70
+[0;32mI (621827) wifi station: read measurement returned ESP_OK[0m
+co2: 962,	 temp: 26.34,	 humidity: 65.69
+raw adc reading 364I (621837) wifi station: sendto ok, bytes=70
+[0;32mI (626647) wifi station: read measurement returned ESP_OK[0m
+co2: 960,	 temp: 26.31,	 humidity: 65.64
+raw adc reading 343I (626657) wifi station: sendto ok, bytes=70
+[0;32mI (631347) wifi station: read measurement returned ESP_OK[0m
+co2: 959,	 temp: 26.28,	 humidity: 65.59
+raw adc reading 353I (631357) wifi station: sendto ok, bytes=70
+[0;32mI (636047) wifi station: read measurement returned ESP_OK[0m
+co2: 959,	 temp: 26.24,	 humidity: 65.59
+raw adc reading 353I (636057) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (640467) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (640467) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (640467) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (640497) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (640897) wifi station: read measurement returned ESP_OK[0m
+co2: 959,	 temp: 26.21,	 humidity: 65.57
+raw adc reading 318I (640917) wifi station: sendto ok, bytes=70
+[0;32mI (645597) wifi station: read measurement returned ESP_OK[0m
+co2: 959,	 temp: 26.16,	 humidity: 65.56
+raw adc reading 341I (645617) wifi station: sendto ok, bytes=70
+[0;32mI (650417) wifi station: read measurement returned ESP_OK[0m
+co2: 964,	 temp: 26.20,	 humidity: 65.56
+raw adc reading 325I (650437) wifi station: sendto ok, bytes=70
+[0;32mI (655117) wifi station: read measurement returned ESP_OK[0m
+co2: 966,	 temp: 26.20,	 humidity: 65.58
+raw adc reading 355I (655137) wifi station: sendto ok, bytes=70
+[0;32mI (659937) wifi station: read measurement returned ESP_OK[0m
+co2: 970,	 temp: 26.26,	 humidity: 65.65
+raw adc reading 331I (659957) wifi station: sendto ok, bytes=70
+[0;32mI (664637) wifi station: read measurement returned ESP_OK[0m
+co2: 975,	 temp: 26.30,	 humidity: 65.58
+raw adc reading 352I (664657) wifi station: sendto ok, bytes=70
+[0;32mI (669457) wifi station: read measurement returned ESP_OK[0m
+co2: 980,	 temp: 26.32,	 humidity: 65.61
+raw adc reading 336I (669477) wifi station: sendto ok, bytes=70
+[0;32mI (674157) wifi station: read measurement returned ESP_OK[0m
+co2: 993,	 temp: 26.34,	 humidity: 65.64
+raw adc reading 349I (674177) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (677737) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (677737) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (677737) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (677767) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (678887) wifi station: read measurement returned ESP_OK[0m
+co2: 992,	 temp: 26.36,	 humidity: 65.65
+raw adc reading 346I (678897) wifi station: sendto ok, bytes=70
+[0;32mI (683707) wifi station: read measurement returned ESP_OK[0m
+co2: 1018,	 temp: 26.39,	 humidity: 65.68
+raw adc reading 349I (683717) wifi station: sendto ok, bytes=71
+[0;32mI (688407) wifi station: read measurement returned ESP_OK[0m
+co2: 1033,	 temp: 26.44,	 humidity: 65.65
+raw adc reading 329I (688417) wifi station: sendto ok, bytes=71
+[0;32mI (693227) wifi station: read measurement returned ESP_OK[0m
+co2: 1036,	 temp: 26.42,	 humidity: 65.64
+raw adc reading 342I (693237) wifi station: sendto ok, bytes=71
+[0;32mI (697927) wifi station: read measurement returned ESP_OK[0m
+co2: 1035,	 temp: 26.42,	 humidity: 65.63
+raw adc reading 336I (697937) wifi station: sendto ok, bytes=71
+[0;32mI (702747) wifi station: read measurement returned ESP_OK[0m
+co2: 1035,	 temp: 26.42,	 humidity: 65.61
+raw adc reading 323I (702757) wifi station: sendto ok, bytes=71
+[0;32mI (707447) wifi station: read measurement returned ESP_OK[0m
+co2: 1036,	 temp: 26.39,	 humidity: 65.56
+raw adc reading 346I (707457) wifi station: sendto ok, bytes=71
+[0;32mI (712267) wifi station: read measurement returned ESP_OK[0m
+co2: 1041,	 temp: 26.43,	 humidity: 65.53
+raw adc reading 338I (712277) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (715007) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (715007) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (715007) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (715037) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (716997) wifi station: read measurement returned ESP_OK[0m
+co2: 1043,	 temp: 26.47,	 humidity: 65.52
+raw adc reading 342I (717017) wifi station: sendto ok, bytes=71
+[0;32mI (721697) wifi station: read measurement returned ESP_OK[0m
+co2: 1042,	 temp: 26.46,	 humidity: 65.56
+raw adc reading 345I (721717) wifi station: sendto ok, bytes=71
+[0;32mI (726517) wifi station: read measurement returned ESP_OK[0m
+co2: 1035,	 temp: 26.48,	 humidity: 65.51
+raw adc reading 349I (726537) wifi station: sendto ok, bytes=71
+[0;32mI (731217) wifi station: read measurement returned ESP_OK[0m
+co2: 1035,	 temp: 26.50,	 humidity: 65.48
+raw adc reading 321I (731237) wifi station: sendto ok, bytes=71
+[0;32mI (736037) wifi station: read measurement returned ESP_OK[0m
+co2: 1029,	 temp: 26.50,	 humidity: 65.46
+raw adc reading 339I (736057) wifi station: sendto ok, bytes=71
+[0;32mI (740737) wifi station: read measurement returned ESP_OK[0m
+co2: 1029,	 temp: 26.48,	 humidity: 65.44
+raw adc reading 349I (740757) wifi station: sendto ok, bytes=71
+[0;32mI (745557) wifi station: read measurement returned ESP_OK[0m
+co2: 1026,	 temp: 26.53,	 humidity: 65.44
+raw adc reading 351I (745577) wifi station: sendto ok, bytes=71
+[0;32mI (750257) wifi station: read measurement returned ESP_OK[0m
+co2: 1028,	 temp: 26.57,	 humidity: 65.38
+raw adc reading 367I (750277) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (752277) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (752277) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (752277) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (752307) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (754987) wifi station: read measurement returned ESP_OK[0m
+co2: 1030,	 temp: 26.55,	 humidity: 65.37
+raw adc reading 368I (754997) wifi station: sendto ok, bytes=71
+[0;32mI (759807) wifi station: read measurement returned ESP_OK[0m
+co2: 1031,	 temp: 26.54,	 humidity: 65.37
+raw adc reading 318I (759817) wifi station: sendto ok, bytes=71
+[0;32mI (764507) wifi station: read measurement returned ESP_OK[0m
+co2: 1027,	 temp: 26.52,	 humidity: 65.32
+raw adc reading 321I (764517) wifi station: sendto ok, bytes=71
+[0;32mI (769327) wifi station: read measurement returned ESP_OK[0m
+co2: 1026,	 temp: 26.55,	 humidity: 65.38
+raw adc reading 354I (769337) wifi station: sendto ok, bytes=71
+[0;32mI (774027) wifi station: read measurement returned ESP_OK[0m
+co2: 1025,	 temp: 26.58,	 humidity: 65.40
+raw adc reading 355I (774037) wifi station: sendto ok, bytes=71
+[0;32mI (778847) wifi station: read measurement returned ESP_OK[0m
+co2: 1035,	 temp: 26.59,	 humidity: 65.76
+raw adc reading 338I (778857) wifi station: sendto ok, bytes=71
+[0;32mI (783547) wifi station: read measurement returned ESP_OK[0m
+co2: 1048,	 temp: 26.61,	 humidity: 65.90
+raw adc reading 368I (783557) wifi station: sendto ok, bytes=71
+[0;32mI (788367) wifi station: read measurement returned ESP_OK[0m
+co2: 1057,	 temp: 26.62,	 humidity: 65.92
+raw adc reading 363I (788377) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (789547) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (789547) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (789547) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (789577) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (793097) wifi station: read measurement returned ESP_OK[0m
+co2: 1057,	 temp: 26.64,	 humidity: 65.84
+raw adc reading 332I (793117) wifi station: sendto ok, bytes=71
+[0;32mI (797797) wifi station: read measurement returned ESP_OK[0m
+co2: 1056,	 temp: 26.70,	 humidity: 65.85
+raw adc reading 346I (797817) wifi station: sendto ok, bytes=71
+[0;32mI (802617) wifi station: read measurement returned ESP_OK[0m
+co2: 1065,	 temp: 26.67,	 humidity: 65.84
+raw adc reading 382I (802637) wifi station: sendto ok, bytes=71
+[0;32mI (807317) wifi station: read measurement returned ESP_OK[0m
+co2: 1065,	 temp: 26.70,	 humidity: 65.79
+raw adc reading 336I (807337) wifi station: sendto ok, bytes=71
+[0;32mI (812137) wifi station: read measurement returned ESP_OK[0m
+co2: 1064,	 temp: 26.73,	 humidity: 65.87
+raw adc reading 336I (812157) wifi station: sendto ok, bytes=71
+[0;32mI (816837) wifi station: read measurement returned ESP_OK[0m
+co2: 1064,	 temp: 26.72,	 humidity: 65.92
+raw adc reading 335I (816857) wifi station: sendto ok, bytes=71
+[0;32mI (821657) wifi station: read measurement returned ESP_OK[0m
+co2: 1062,	 temp: 26.72,	 humidity: 65.86
+raw adc reading 336I (821677) wifi station: sendto ok, bytes=71
+[0;32mI (826357) wifi station: read measurement returned ESP_OK[0m
+co2: 1047,	 temp: 26.74,	 humidity: 65.79
+raw adc reading 317I (826377) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (826817) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (826817) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (826817) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (826847) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (831087) wifi station: read measurement returned ESP_OK[0m
+co2: 1044,	 temp: 26.73,	 humidity: 65.70
+raw adc reading 320I (831097) wifi station: sendto ok, bytes=71
+[0;32mI (835907) wifi station: read measurement returned ESP_OK[0m
+co2: 1016,	 temp: 26.70,	 humidity: 65.61
+raw adc reading 336I (835917) wifi station: sendto ok, bytes=71
+[0;32mI (840607) wifi station: read measurement returned ESP_OK[0m
+co2: 1018,	 temp: 26.67,	 humidity: 65.53
+raw adc reading 361I (840617) wifi station: sendto ok, bytes=71
+[0;32mI (845427) wifi station: read measurement returned ESP_OK[0m
+co2: 1001,	 temp: 26.66,	 humidity: 65.46
+raw adc reading 358I (845437) wifi station: sendto ok, bytes=71
+[0;32mI (850127) wifi station: read measurement returned ESP_OK[0m
+co2: 1002,	 temp: 26.63,	 humidity: 65.38
+raw adc reading 348I (850137) wifi station: sendto ok, bytes=71
+[0;32mI (854947) wifi station: read measurement returned ESP_OK[0m
+co2: 1001,	 temp: 26.60,	 humidity: 65.33
+raw adc reading 319I (854957) wifi station: sendto ok, bytes=71
+[0;32mI (859647) wifi station: read measurement returned ESP_OK[0m
+co2: 1001,	 temp: 26.58,	 humidity: 65.31
+raw adc reading 322I (859657) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (863947) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (863947) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (863947) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (863977) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (864377) wifi station: read measurement returned ESP_OK[0m
+co2: 1000,	 temp: 26.54,	 humidity: 65.37
+raw adc reading 324I (864397) wifi station: sendto ok, bytes=71
+[0;32mI (869197) wifi station: read measurement returned ESP_OK[0m
+co2: 999,	 temp: 26.59,	 humidity: 65.38
+raw adc reading 362I (869217) wifi station: sendto ok, bytes=70
+[0;32mI (873897) wifi station: read measurement returned ESP_OK[0m
+co2: 998,	 temp: 26.60,	 humidity: 65.34
+raw adc reading 351I (873917) wifi station: sendto ok, bytes=70
+[0;32mI (878717) wifi station: read measurement returned ESP_OK[0m
+co2: 998,	 temp: 26.61,	 humidity: 65.35
+raw adc reading 333I (878737) wifi station: sendto ok, bytes=70
+[0;32mI (883417) wifi station: read measurement returned ESP_OK[0m
+co2: 999,	 temp: 26.63,	 humidity: 65.37
+raw adc reading 319I (883437) wifi station: sendto ok, bytes=70
+[0;32mI (888237) wifi station: read measurement returned ESP_OK[0m
+co2: 988,	 temp: 26.64,	 humidity: 65.42
+raw adc reading 311I (888257) wifi station: sendto ok, bytes=70
+[0;32mI (892937) wifi station: read measurement returned ESP_OK[0m
+co2: 965,	 temp: 26.65,	 humidity: 65.44
+raw adc reading 342I (892957) wifi station: sendto ok, bytes=70
+[0;32mI (897757) wifi station: read measurement returned ESP_OK[0m
+co2: 965,	 temp: 26.67,	 humidity: 65.49
+raw adc reading 337I (897777) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (901217) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (901217) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (901217) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (901247) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (902487) wifi station: read measurement returned ESP_OK[0m
+co2: 974,	 temp: 26.62,	 humidity: 65.50
+raw adc reading 319I (902497) wifi station: sendto ok, bytes=70
+[0;32mI (907187) wifi station: read measurement returned ESP_OK[0m
+co2: 988,	 temp: 26.63,	 humidity: 65.48
+raw adc reading 313I (907197) wifi station: sendto ok, bytes=70
+[0;32mI (912007) wifi station: read measurement returned ESP_OK[0m
+co2: 1002,	 temp: 26.60,	 humidity: 65.51
+raw adc reading 336I (912017) wifi station: sendto ok, bytes=71
+[0;32mI (916707) wifi station: read measurement returned ESP_OK[0m
+co2: 1003,	 temp: 26.61,	 humidity: 65.47
+raw adc reading 345I (916717) wifi station: sendto ok, bytes=71
+[0;32mI (921527) wifi station: read measurement returned ESP_OK[0m
+co2: 1017,	 temp: 26.56,	 humidity: 65.47
+raw adc reading 329I (921537) wifi station: sendto ok, bytes=71
+[0;32mI (926227) wifi station: read measurement returned ESP_OK[0m
+co2: 1022,	 temp: 26.61,	 humidity: 65.48
+raw adc reading 336I (926237) wifi station: sendto ok, bytes=71
+[0;32mI (931047) wifi station: read measurement returned ESP_OK[0m
+co2: 1025,	 temp: 26.62,	 humidity: 65.45
+raw adc reading 366I (931057) wifi station: sendto ok, bytes=71
+[0;32mI (935747) wifi station: read measurement returned ESP_OK[0m
+co2: 1027,	 temp: 26.62,	 humidity: 65.37
+raw adc reading 326I (935757) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (938487) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (938487) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (938487) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (938517) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (940477) wifi station: read measurement returned ESP_OK[0m
+co2: 1030,	 temp: 26.63,	 humidity: 65.37
+raw adc reading 349I (940497) wifi station: sendto ok, bytes=71
+[0;32mI (945297) wifi station: read measurement returned ESP_OK[0m
+co2: 1032,	 temp: 26.60,	 humidity: 65.33
+raw adc reading 340I (945317) wifi station: sendto ok, bytes=71
+[0;32mI (949997) wifi station: read measurement returned ESP_OK[0m
+co2: 1034,	 temp: 26.58,	 humidity: 65.31
+raw adc reading 351I (950017) wifi station: sendto ok, bytes=71
+[0;32mI (954817) wifi station: read measurement returned ESP_OK[0m
+co2: 1033,	 temp: 26.59,	 humidity: 65.35
+raw adc reading 336I (954837) wifi station: sendto ok, bytes=71
+[0;32mI (959517) wifi station: read measurement returned ESP_OK[0m
+co2: 1033,	 temp: 26.59,	 humidity: 65.36
+raw adc reading 354I (959537) wifi station: sendto ok, bytes=71
+[0;32mI (964337) wifi station: read measurement returned ESP_OK[0m
+co2: 1033,	 temp: 26.59,	 humidity: 65.37
+raw adc reading 353I (964357) wifi station: sendto ok, bytes=71
+[0;32mI (969037) wifi station: read measurement returned ESP_OK[0m
+co2: 1032,	 temp: 26.57,	 humidity: 65.35
+raw adc reading 346I (969057) wifi station: sendto ok, bytes=71
+[0;32mI (973857) wifi station: read measurement returned ESP_OK[0m
+co2: 1009,	 temp: 26.54,	 humidity: 65.31
+raw adc reading 357I (973877) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (975757) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (975757) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (975757) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (975787) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (978587) wifi station: read measurement returned ESP_OK[0m
+co2: 982,	 temp: 26.49,	 humidity: 65.29
+raw adc reading 317I (978597) wifi station: sendto ok, bytes=70
+[0;32mI (983287) wifi station: read measurement returned ESP_OK[0m
+co2: 984,	 temp: 26.49,	 humidity: 65.28
+raw adc reading 346I (983297) wifi station: sendto ok, bytes=70
+[0;32mI (988107) wifi station: read measurement returned ESP_OK[0m
+co2: 985,	 temp: 26.46,	 humidity: 65.31
+raw adc reading 310I (988117) wifi station: sendto ok, bytes=70
+[0;32mI (992807) wifi station: read measurement returned ESP_OK[0m
+co2: 988,	 temp: 26.45,	 humidity: 65.34
+raw adc reading 350I (992817) wifi station: sendto ok, bytes=70
+[0;32mI (997627) wifi station: read measurement returned ESP_OK[0m
+co2: 990,	 temp: 26.48,	 humidity: 65.29
+raw adc reading 330I (997637) wifi station: sendto ok, bytes=70
+[0;32mI (1002327) wifi station: read measurement returned ESP_OK[0m
+co2: 994,	 temp: 26.52,	 humidity: 65.35
+raw adc reading 336I (1002337) wifi station: sendto ok, bytes=70
+[0;32mI (1007147) wifi station: read measurement returned ESP_OK[0m
+co2: 1009,	 temp: 26.54,	 humidity: 65.33
+raw adc reading 366I (1007157) wifi station: sendto ok, bytes=71
+[0;32mI (1011847) wifi station: read measurement returned ESP_OK[0m
+co2: 1018,	 temp: 26.55,	 humidity: 65.50
+raw adc reading 373I (1011857) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (1013027) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1013027) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1013027) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1013057) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1016697) wifi station: read measurement returned ESP_OK[0m
+co2: 1024,	 temp: 26.53,	 humidity: 65.48
+raw adc reading 393I (1016717) wifi station: sendto ok, bytes=71
+[0;32mI (1021397) wifi station: read measurement returned ESP_OK[0m
+co2: 1035,	 temp: 26.57,	 humidity: 65.53
+raw adc reading 394I (1021417) wifi station: sendto ok, bytes=71
+[0;32mI (1026097) wifi station: read measurement returned ESP_OK[0m
+co2: 1054,	 temp: 26.59,	 humidity: 65.56
+raw adc reading 385I (1026117) wifi station: sendto ok, bytes=71
+[0;32mI (1030917) wifi station: read measurement returned ESP_OK[0m
+co2: 1076,	 temp: 26.58,	 humidity: 65.56
+raw adc reading 349I (1030937) wifi station: sendto ok, bytes=71
+[0;32mI (1035617) wifi station: read measurement returned ESP_OK[0m
+co2: 1091,	 temp: 26.61,	 humidity: 65.48
+raw adc reading 349I (1035637) wifi station: sendto ok, bytes=71
+[0;32mI (1040437) wifi station: read measurement returned ESP_OK[0m
+co2: 1104,	 temp: 26.61,	 humidity: 65.42
+raw adc reading 368I (1040457) wifi station: sendto ok, bytes=71
+[0;32mI (1045137) wifi station: read measurement returned ESP_OK[0m
+co2: 1107,	 temp: 26.62,	 humidity: 65.42
+raw adc reading 357I (1045157) wifi station: sendto ok, bytes=71
+[0;32mI (1049957) wifi station: read measurement returned ESP_OK[0m
+co2: 1109,	 temp: 26.60,	 humidity: 65.36
+raw adc reading 324I (1049977) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (1050297) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1050297) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1050297) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1050327) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1054687) wifi station: read measurement returned ESP_OK[0m
+co2: 1118,	 temp: 26.59,	 humidity: 65.35
+raw adc reading 352I (1054697) wifi station: sendto ok, bytes=71
+[0;32mI (1059507) wifi station: read measurement returned ESP_OK[0m
+co2: 1119,	 temp: 26.63,	 humidity: 65.30
+raw adc reading 365I (1059517) wifi station: sendto ok, bytes=71
+[0;32mI (1064207) wifi station: read measurement returned ESP_OK[0m
+co2: 1119,	 temp: 26.63,	 humidity: 65.28
+raw adc reading 367I (1064217) wifi station: sendto ok, bytes=71
+[0;32mI (1068907) wifi station: read measurement returned ESP_OK[0m
+co2: 1119,	 temp: 26.64,	 humidity: 65.37
+raw adc reading 359I (1068917) wifi station: sendto ok, bytes=71
+[0;32mI (1073727) wifi station: read measurement returned ESP_OK[0m
+co2: 1089,	 temp: 26.65,	 humidity: 65.46
+raw adc reading 343I (1073737) wifi station: sendto ok, bytes=71
+[0;32mI (1078427) wifi station: read measurement returned ESP_OK[0m
+co2: 976,	 temp: 26.68,	 humidity: 65.53
+raw adc reading 340I (1078437) wifi station: sendto ok, bytes=70
+[0;32mI (1083247) wifi station: read measurement returned ESP_OK[0m
+co2: 950,	 temp: 26.61,	 humidity: 65.47
+raw adc reading 368I (1083257) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1087427) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1087427) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1087427) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1087457) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1087977) wifi station: read measurement returned ESP_OK[0m
+co2: 952,	 temp: 26.58,	 humidity: 65.46
+raw adc reading 358I (1087997) wifi station: sendto ok, bytes=70
+[0;32mI (1092797) wifi station: read measurement returned ESP_OK[0m
+co2: 989,	 temp: 26.60,	 humidity: 65.44
+raw adc reading 356I (1092817) wifi station: sendto ok, bytes=70
+[0;32mI (1097497) wifi station: read measurement returned ESP_OK[0m
+co2: 1025,	 temp: 26.63,	 humidity: 65.39
+raw adc reading 372I (1097517) wifi station: sendto ok, bytes=71
+[0;32mI (1102317) wifi station: read measurement returned ESP_OK[0m
+co2: 1046,	 temp: 26.59,	 humidity: 65.38
+raw adc reading 367I (1102337) wifi station: sendto ok, bytes=71
+[0;32mI (1107017) wifi station: read measurement returned ESP_OK[0m
+co2: 1054,	 temp: 26.54,	 humidity: 65.38
+raw adc reading 325I (1107037) wifi station: sendto ok, bytes=71
+[0;32mI (1111717) wifi station: read measurement returned ESP_OK[0m
+co2: 1055,	 temp: 26.53,	 humidity: 65.40
+raw adc reading 353I (1111737) wifi station: sendto ok, bytes=71
+[0;32mI (1116537) wifi station: read measurement returned ESP_OK[0m
+co2: 1055,	 temp: 26.56,	 humidity: 65.42
+raw adc reading 365I (1116557) wifi station: sendto ok, bytes=71
+[0;32mI (1121237) wifi station: read measurement returned ESP_OK[0m
+co2: 1052,	 temp: 26.54,	 humidity: 65.47
+raw adc reading 352I (1121257) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (1124697) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1124697) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1124697) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1124727) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1126087) wifi station: read measurement returned ESP_OK[0m
+co2: 1064,	 temp: 26.55,	 humidity: 65.46
+raw adc reading 322I (1126097) wifi station: sendto ok, bytes=71
+[0;32mI (1130787) wifi station: read measurement returned ESP_OK[0m
+co2: 1025,	 temp: 26.55,	 humidity: 65.46
+raw adc reading 377I (1130797) wifi station: sendto ok, bytes=71
+[0;32mI (1135607) wifi station: read measurement returned ESP_OK[0m
+co2: 1014,	 temp: 26.51,	 humidity: 65.48
+raw adc reading 342I (1135617) wifi station: sendto ok, bytes=71
+[0;32mI (1140307) wifi station: read measurement returned ESP_OK[0m
+co2: 988,	 temp: 26.49,	 humidity: 65.48
+raw adc reading 363I (1140317) wifi station: sendto ok, bytes=70
+[0;32mI (1145007) wifi station: read measurement returned ESP_OK[0m
+co2: 954,	 temp: 26.47,	 humidity: 65.48
+raw adc reading 345I (1145017) wifi station: sendto ok, bytes=70
+[0;32mI (1149827) wifi station: read measurement returned ESP_OK[0m
+co2: 954,	 temp: 26.42,	 humidity: 65.46
+raw adc reading 351I (1149837) wifi station: sendto ok, bytes=70
+[0;32mI (1154527) wifi station: read measurement returned ESP_OK[0m
+co2: 952,	 temp: 26.43,	 humidity: 65.50
+raw adc reading 343I (1154537) wifi station: sendto ok, bytes=70
+[0;32mI (1159347) wifi station: read measurement returned ESP_OK[0m
+co2: 945,	 temp: 26.40,	 humidity: 65.55
+raw adc reading 320I (1159357) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1161967) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1161967) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1161967) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1161997) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1164077) wifi station: read measurement returned ESP_OK[0m
+co2: 946,	 temp: 26.40,	 humidity: 65.49
+raw adc reading 310I (1164097) wifi station: sendto ok, bytes=70
+[0;32mI (1168897) wifi station: read measurement returned ESP_OK[0m
+co2: 960,	 temp: 26.40,	 humidity: 65.51
+raw adc reading 346I (1168917) wifi station: sendto ok, bytes=70
+[0;32mI (1173597) wifi station: read measurement returned ESP_OK[0m
+co2: 960,	 temp: 26.42,	 humidity: 65.47
+raw adc reading 340I (1173617) wifi station: sendto ok, bytes=70
+[0;32mI (1178417) wifi station: read measurement returned ESP_OK[0m
+co2: 960,	 temp: 26.47,	 humidity: 65.44
+raw adc reading 373I (1178437) wifi station: sendto ok, bytes=70
+[0;32mI (1183117) wifi station: read measurement returned ESP_OK[0m
+co2: 968,	 temp: 26.50,	 humidity: 65.41
+raw adc reading 338I (1183137) wifi station: sendto ok, bytes=70
+[0;32mI (1187817) wifi station: read measurement returned ESP_OK[0m
+co2: 981,	 temp: 26.55,	 humidity: 65.37
+raw adc reading 303I (1187837) wifi station: sendto ok, bytes=70
+[0;32mI (1192637) wifi station: read measurement returned ESP_OK[0m
+co2: 980,	 temp: 26.54,	 humidity: 65.29
+raw adc reading 326I (1192657) wifi station: sendto ok, bytes=70
+[0;32mI (1197337) wifi station: read measurement returned ESP_OK[0m
+co2: 811,	 temp: 26.54,	 humidity: 65.25
+raw adc reading 337I (1197357) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1199237) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1199237) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1199237) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1199267) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1202187) wifi station: read measurement returned ESP_OK[0m
+co2: 832,	 temp: 26.53,	 humidity: 65.25
+raw adc reading 358I (1202197) wifi station: sendto ok, bytes=70
+[0;32mI (1206887) wifi station: read measurement returned ESP_OK[0m
+co2: 871,	 temp: 26.55,	 humidity: 65.23
+raw adc reading 318I (1206897) wifi station: sendto ok, bytes=70
+[0;32mI (1211707) wifi station: read measurement returned ESP_OK[0m
+co2: 899,	 temp: 26.57,	 humidity: 65.25
+raw adc reading 336I (1211717) wifi station: sendto ok, bytes=70
+[0;32mI (1216407) wifi station: read measurement returned ESP_OK[0m
+co2: 923,	 temp: 26.57,	 humidity: 65.27
+raw adc reading 333I (1216417) wifi station: sendto ok, bytes=70
+[0;32mI (1221227) wifi station: read measurement returned ESP_OK[0m
+co2: 957,	 temp: 26.56,	 humidity: 65.30
+raw adc reading 329I (1221237) wifi station: sendto ok, bytes=70
+[0;32mI (1225927) wifi station: read measurement returned ESP_OK[0m
+co2: 964,	 temp: 26.51,	 humidity: 65.30
+raw adc reading 345I (1225937) wifi station: sendto ok, bytes=70
+[0;32mI (1230747) wifi station: read measurement returned ESP_OK[0m
+co2: 982,	 temp: 26.52,	 humidity: 65.29
+raw adc reading 342I (1230757) wifi station: sendto ok, bytes=70
+[0;32mI (1235447) wifi station: read measurement returned ESP_OK[0m
+co2: 997,	 temp: 26.48,	 humidity: 65.21
+raw adc reading 337I (1235457) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1236507) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1236507) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1236507) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1236537) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1240177) wifi station: read measurement returned ESP_OK[0m
+co2: 998,	 temp: 26.51,	 humidity: 65.28
+raw adc reading 327I (1240197) wifi station: sendto ok, bytes=70
+[0;32mI (1244997) wifi station: read measurement returned ESP_OK[0m
+co2: 1004,	 temp: 26.53,	 humidity: 65.41
+raw adc reading 352I (1245017) wifi station: sendto ok, bytes=71
+[0;32mI (1249697) wifi station: read measurement returned ESP_OK[0m
+co2: 1004,	 temp: 26.55,	 humidity: 65.42
+raw adc reading 304I (1249717) wifi station: sendto ok, bytes=71
+[0;32mI (1254517) wifi station: read measurement returned ESP_OK[0m
+co2: 978,	 temp: 26.56,	 humidity: 65.39
+raw adc reading 339I (1254537) wifi station: sendto ok, bytes=70
+[0;32mI (1259217) wifi station: read measurement returned ESP_OK[0m
+co2: 979,	 temp: 26.56,	 humidity: 65.41
+raw adc reading 306I (1259237) wifi station: sendto ok, bytes=70
+[0;32mI (1264037) wifi station: read measurement returned ESP_OK[0m
+co2: 979,	 temp: 26.59,	 humidity: 65.31
+raw adc reading 350I (1264057) wifi station: sendto ok, bytes=70
+[0;32mI (1268737) wifi station: read measurement returned ESP_OK[0m
+co2: 981,	 temp: 26.61,	 humidity: 65.32
+raw adc reading 328I (1268757) wifi station: sendto ok, bytes=70
+[0;32mI (1273437) wifi station: read measurement returned ESP_OK[0m
+co2: 979,	 temp: 26.62,	 humidity: 65.28
+raw adc reading 358I (1273457) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1273777) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1273777) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1273777) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1273807) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1278287) wifi station: read measurement returned ESP_OK[0m
+co2: 961,	 temp: 26.64,	 humidity: 65.30
+raw adc reading 330I (1278297) wifi station: sendto ok, bytes=70
+[0;32mI (1282987) wifi station: read measurement returned ESP_OK[0m
+co2: 965,	 temp: 26.65,	 humidity: 65.33
+raw adc reading 322I (1282997) wifi station: sendto ok, bytes=70
+[0;32mI (1287807) wifi station: read measurement returned ESP_OK[0m
+co2: 973,	 temp: 26.67,	 humidity: 65.29
+raw adc reading 304I (1287817) wifi station: sendto ok, bytes=70
+[0;32mI (1292507) wifi station: read measurement returned ESP_OK[0m
+co2: 972,	 temp: 26.68,	 humidity: 65.33
+raw adc reading 340I (1292517) wifi station: sendto ok, bytes=70
+[0;32mI (1297327) wifi station: read measurement returned ESP_OK[0m
+co2: 972,	 temp: 26.70,	 humidity: 65.36
+raw adc reading 304I (1297337) wifi station: sendto ok, bytes=70
+[0;32mI (1302027) wifi station: read measurement returned ESP_OK[0m
+co2: 976,	 temp: 26.71,	 humidity: 65.28
+raw adc reading 367I (1302037) wifi station: sendto ok, bytes=70
+[0;32mI (1306847) wifi station: read measurement returned ESP_OK[0m
+co2: 981,	 temp: 26.72,	 humidity: 65.29
+raw adc reading 336I (1306857) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1310907) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1310907) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1310907) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1310937) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1311577) wifi station: read measurement returned ESP_OK[0m
+co2: 984,	 temp: 26.73,	 humidity: 65.22
+raw adc reading 337I (1311597) wifi station: sendto ok, bytes=70
+[0;32mI (1316277) wifi station: read measurement returned ESP_OK[0m
+co2: 984,	 temp: 26.74,	 humidity: 65.16
+raw adc reading 333I (1316297) wifi station: sendto ok, bytes=70
+[0;32mI (1321097) wifi station: read measurement returned ESP_OK[0m
+co2: 988,	 temp: 26.75,	 humidity: 65.05
+raw adc reading 327I (1321117) wifi station: sendto ok, bytes=70
+[0;32mI (1325797) wifi station: read measurement returned ESP_OK[0m
+co2: 994,	 temp: 26.77,	 humidity: 65.01
+raw adc reading 324I (1325817) wifi station: sendto ok, bytes=70
+[0;32mI (1330617) wifi station: read measurement returned ESP_OK[0m
+co2: 994,	 temp: 26.76,	 humidity: 64.94
+raw adc reading 319I (1330637) wifi station: sendto ok, bytes=70
+[0;32mI (1335317) wifi station: read measurement returned ESP_OK[0m
+co2: 994,	 temp: 26.75,	 humidity: 64.89
+raw adc reading 295I (1335337) wifi station: sendto ok, bytes=70
+[0;32mI (1340137) wifi station: read measurement returned ESP_OK[0m
+co2: 994,	 temp: 26.77,	 humidity: 64.95
+raw adc reading 320I (1340157) wifi station: sendto ok, bytes=70
+[0;32mI (1344837) wifi station: read measurement returned ESP_OK[0m
+co2: 994,	 temp: 26.76,	 humidity: 65.01
+raw adc reading 375I (1344857) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1348177) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1348177) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1348177) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1348207) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1349567) wifi station: read measurement returned ESP_OK[0m
+co2: 997,	 temp: 26.76,	 humidity: 65.08
+raw adc reading 334I (1349577) wifi station: sendto ok, bytes=70
+[0;32mI (1354387) wifi station: read measurement returned ESP_OK[0m
+co2: 1003,	 temp: 26.76,	 humidity: 65.10
+raw adc reading 336I (1354397) wifi station: sendto ok, bytes=71
+[0;32mI (1359087) wifi station: read measurement returned ESP_OK[0m
+co2: 1007,	 temp: 26.77,	 humidity: 65.10
+raw adc reading 340I (1359097) wifi station: sendto ok, bytes=71
+[0;32mI (1363907) wifi station: read measurement returned ESP_OK[0m
+co2: 1012,	 temp: 26.76,	 humidity: 65.08
+raw adc reading 298I (1363917) wifi station: sendto ok, bytes=71
+[0;32mI (1368607) wifi station: read measurement returned ESP_OK[0m
+co2: 1012,	 temp: 26.77,	 humidity: 65.07
+raw adc reading 338I (1368617) wifi station: sendto ok, bytes=71
+[0;32mI (1373427) wifi station: read measurement returned ESP_OK[0m
+co2: 1011,	 temp: 26.73,	 humidity: 65.06
+raw adc reading 362I (1373437) wifi station: sendto ok, bytes=71
+[0;32mI (1378127) wifi station: read measurement returned ESP_OK[0m
+co2: 1011,	 temp: 26.72,	 humidity: 65.10
+raw adc reading 292I (1378137) wifi station: sendto ok, bytes=71
+[0;32mI (1382947) wifi station: read measurement returned ESP_OK[0m
+co2: 1011,	 temp: 26.70,	 humidity: 65.08
+raw adc reading 369I (1382957) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (1385447) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1385447) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1385447) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1385477) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1387677) wifi station: read measurement returned ESP_OK[0m
+co2: 1006,	 temp: 26.73,	 humidity: 65.05
+raw adc reading 305I (1387697) wifi station: sendto ok, bytes=71
+[0;32mI (1392377) wifi station: read measurement returned ESP_OK[0m
+co2: 1005,	 temp: 26.74,	 humidity: 64.93
+raw adc reading 368I (1392397) wifi station: sendto ok, bytes=71
+[0;32mI (1397197) wifi station: read measurement returned ESP_OK[0m
+co2: 1016,	 temp: 26.75,	 humidity: 64.92
+raw adc reading 370I (1397217) wifi station: sendto ok, bytes=71
+[0;32mI (1401897) wifi station: read measurement returned ESP_OK[0m
+co2: 1015,	 temp: 26.76,	 humidity: 64.88
+raw adc reading 308I (1401917) wifi station: sendto ok, bytes=71
+[0;32mI (1406717) wifi station: read measurement returned ESP_OK[0m
+co2: 962,	 temp: 26.78,	 humidity: 64.86
+raw adc reading 322I (1406737) wifi station: sendto ok, bytes=70
+[0;32mI (1411417) wifi station: read measurement returned ESP_OK[0m
+co2: 946,	 temp: 26.78,	 humidity: 64.85
+raw adc reading 291I (1411437) wifi station: sendto ok, bytes=70
+[0;32mI (1416237) wifi station: read measurement returned ESP_OK[0m
+co2: 929,	 temp: 26.80,	 humidity: 64.92
+raw adc reading 300I (1416257) wifi station: sendto ok, bytes=70
+[0;32mI (1420937) wifi station: read measurement returned ESP_OK[0m
+co2: 926,	 temp: 26.81,	 humidity: 64.90
+raw adc reading 300I (1420957) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1422717) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1422717) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1422717) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1422747) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1425667) wifi station: read measurement returned ESP_OK[0m
+co2: 918,	 temp: 26.79,	 humidity: 64.94
+raw adc reading 335I (1425677) wifi station: sendto ok, bytes=70
+[0;32mI (1430487) wifi station: read measurement returned ESP_OK[0m
+co2: 912,	 temp: 26.80,	 humidity: 64.93
+raw adc reading 292I (1430497) wifi station: sendto ok, bytes=70
+[0;32mI (1435187) wifi station: read measurement returned ESP_OK[0m
+co2: 908,	 temp: 26.81,	 humidity: 64.89
+raw adc reading 309I (1435197) wifi station: sendto ok, bytes=70
+[0;32mI (1440007) wifi station: read measurement returned ESP_OK[0m
+co2: 936,	 temp: 26.81,	 humidity: 64.88
+raw adc reading 305I (1440017) wifi station: sendto ok, bytes=70
+[0;32mI (1444707) wifi station: read measurement returned ESP_OK[0m
+co2: 939,	 temp: 26.81,	 humidity: 64.92
+raw adc reading 317I (1444717) wifi station: sendto ok, bytes=70
+[0;32mI (1449527) wifi station: read measurement returned ESP_OK[0m
+co2: 947,	 temp: 26.82,	 humidity: 64.93
+raw adc reading 334I (1449537) wifi station: sendto ok, bytes=70
+[0;32mI (1454227) wifi station: read measurement returned ESP_OK[0m
+co2: 956,	 temp: 26.84,	 humidity: 64.88
+raw adc reading 288I (1454237) wifi station: sendto ok, bytes=70
+[0;32mI (1459047) wifi station: read measurement returned ESP_OK[0m
+co2: 957,	 temp: 26.84,	 humidity: 64.90
+raw adc reading 351I (1459057) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1459987) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1459987) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1459987) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1460017) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1463777) wifi station: read measurement returned ESP_OK[0m
+co2: 961,	 temp: 26.84,	 humidity: 64.93
+raw adc reading 323I (1463797) wifi station: sendto ok, bytes=70
+[0;32mI (1468477) wifi station: read measurement returned ESP_OK[0m
+co2: 959,	 temp: 26.85,	 humidity: 64.95
+raw adc reading 286I (1468497) wifi station: sendto ok, bytes=70
+[0;32mI (1473297) wifi station: read measurement returned ESP_OK[0m
+co2: 962,	 temp: 26.83,	 humidity: 64.89
+raw adc reading 330I (1473317) wifi station: sendto ok, bytes=70
+[0;32mI (1477997) wifi station: read measurement returned ESP_OK[0m
+co2: 966,	 temp: 26.85,	 humidity: 64.88
+raw adc reading 289I (1478017) wifi station: sendto ok, bytes=70
+[0;32mI (1482817) wifi station: read measurement returned ESP_OK[0m
+co2: 966,	 temp: 26.86,	 humidity: 64.87
+raw adc reading 339I (1482837) wifi station: sendto ok, bytes=70
+[0;32mI (1487517) wifi station: read measurement returned ESP_OK[0m
+co2: 970,	 temp: 26.86,	 humidity: 64.88
+raw adc reading 320I (1487537) wifi station: sendto ok, bytes=70
+[0;32mI (1492337) wifi station: read measurement returned ESP_OK[0m
+co2: 971,	 temp: 26.86,	 humidity: 64.92
+raw adc reading 323I (1492357) wifi station: sendto ok, bytes=70
+[0;32mI (1497037) wifi station: read measurement returned ESP_OK[0m
+co2: 973,	 temp: 26.85,	 humidity: 64.95
+raw adc reading 324I (1497057) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1497257) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1497257) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1497257) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1497287) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1501767) wifi station: read measurement returned ESP_OK[0m
+co2: 973,	 temp: 26.85,	 humidity: 65.01
+raw adc reading 353I (1501777) wifi station: sendto ok, bytes=70
+[0;32mI (1506587) wifi station: read measurement returned ESP_OK[0m
+co2: 972,	 temp: 26.84,	 humidity: 64.94
+raw adc reading 331I (1506597) wifi station: sendto ok, bytes=70
+[0;32mI (1511287) wifi station: read measurement returned ESP_OK[0m
+co2: 973,	 temp: 26.83,	 humidity: 65.00
+raw adc reading 326I (1511297) wifi station: sendto ok, bytes=70
+[0;32mI (1516107) wifi station: read measurement returned ESP_OK[0m
+co2: 974,	 temp: 26.82,	 humidity: 65.07
+raw adc reading 295I (1516117) wifi station: sendto ok, bytes=70
+[0;32mI (1520807) wifi station: read measurement returned ESP_OK[0m
+co2: 974,	 temp: 26.83,	 humidity: 65.09
+raw adc reading 334I (1520817) wifi station: sendto ok, bytes=70
+[0;32mI (1525627) wifi station: read measurement returned ESP_OK[0m
+co2: 973,	 temp: 26.82,	 humidity: 65.05
+raw adc reading 308I (1525637) wifi station: sendto ok, bytes=70
+[0;32mI (1530327) wifi station: read measurement returned ESP_OK[0m
+co2: 973,	 temp: 26.84,	 humidity: 65.04
+raw adc reading 330I (1530337) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1534387) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1534387) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1534387) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1534417) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1535057) wifi station: read measurement returned ESP_OK[0m
+co2: 974,	 temp: 26.85,	 humidity: 65.06
+raw adc reading 351I (1535077) wifi station: sendto ok, bytes=70
+[0;32mI (1539877) wifi station: read measurement returned ESP_OK[0m
+co2: 944,	 temp: 26.87,	 humidity: 65.02
+raw adc reading 323I (1539897) wifi station: sendto ok, bytes=70
+[0;32mI (1544577) wifi station: read measurement returned ESP_OK[0m
+co2: 926,	 temp: 26.85,	 humidity: 64.96
+raw adc reading 305I (1544597) wifi station: sendto ok, bytes=70
+[0;32mI (1549397) wifi station: read measurement returned ESP_OK[0m
+co2: 906,	 temp: 26.81,	 humidity: 64.97
+raw adc reading 342I (1549417) wifi station: sendto ok, bytes=70
+[0;32mI (1554097) wifi station: read measurement returned ESP_OK[0m
+co2: 793,	 temp: 26.81,	 humidity: 65.00
+raw adc reading 345I (1554117) wifi station: sendto ok, bytes=70
+[0;32mI (1558917) wifi station: read measurement returned ESP_OK[0m
+co2: 804,	 temp: 26.77,	 humidity: 64.97
+raw adc reading 316I (1558937) wifi station: sendto ok, bytes=70
+[0;32mI (1563617) wifi station: read measurement returned ESP_OK[0m
+co2: 841,	 temp: 26.78,	 humidity: 64.98
+raw adc reading 329I (1563637) wifi station: sendto ok, bytes=70
+[0;32mI (1568437) wifi station: read measurement returned ESP_OK[0m
+co2: 867,	 temp: 26.78,	 humidity: 65.02
+raw adc reading 339I (1568457) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1571657) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1571657) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1571657) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1571687) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1573167) wifi station: read measurement returned ESP_OK[0m
+co2: 893,	 temp: 26.81,	 humidity: 64.97
+raw adc reading 336I (1573177) wifi station: sendto ok, bytes=70
+[0;32mI (1577867) wifi station: read measurement returned ESP_OK[0m
+co2: 912,	 temp: 26.79,	 humidity: 64.97
+raw adc reading 320I (1577877) wifi station: sendto ok, bytes=70
+[0;32mI (1582687) wifi station: read measurement returned ESP_OK[0m
+co2: 928,	 temp: 26.78,	 humidity: 65.00
+raw adc reading 342I (1582697) wifi station: sendto ok, bytes=70
+[0;32mI (1587387) wifi station: read measurement returned ESP_OK[0m
+co2: 937,	 temp: 26.80,	 humidity: 65.03
+raw adc reading 292I (1587397) wifi station: sendto ok, bytes=70
+[0;32mI (1592207) wifi station: read measurement returned ESP_OK[0m
+co2: 950,	 temp: 26.81,	 humidity: 65.00
+raw adc reading 300I (1592217) wifi station: sendto ok, bytes=70
+[0;32mI (1596907) wifi station: read measurement returned ESP_OK[0m
+co2: 962,	 temp: 26.84,	 humidity: 64.90
+raw adc reading 302I (1596917) wifi station: sendto ok, bytes=70
+[0;32mI (1601727) wifi station: read measurement returned ESP_OK[0m
+co2: 973,	 temp: 26.84,	 humidity: 64.89
+raw adc reading 327I (1601737) wifi station: sendto ok, bytes=70
+[0;32mI (1606427) wifi station: read measurement returned ESP_OK[0m
+co2: 974,	 temp: 26.85,	 humidity: 64.89
+raw adc reading 288I (1606437) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1608927) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1608927) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1608927) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1608957) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1611277) wifi station: read measurement returned ESP_OK[0m
+co2: 976,	 temp: 26.86,	 humidity: 64.87
+raw adc reading 330I (1611297) wifi station: sendto ok, bytes=70
+[0;32mI (1615977) wifi station: read measurement returned ESP_OK[0m
+co2: 982,	 temp: 26.81,	 humidity: 64.88
+raw adc reading 300I (1615997) wifi station: sendto ok, bytes=70
+[0;32mI (1620677) wifi station: read measurement returned ESP_OK[0m
+co2: 982,	 temp: 26.82,	 humidity: 64.88
+raw adc reading 311I (1620697) wifi station: sendto ok, bytes=70
+[0;32mI (1625497) wifi station: read measurement returned ESP_OK[0m
+co2: 982,	 temp: 26.81,	 humidity: 64.83
+raw adc reading 302I (1625517) wifi station: sendto ok, bytes=70
+[0;32mI (1630197) wifi station: read measurement returned ESP_OK[0m
+co2: 986,	 temp: 26.82,	 humidity: 64.92
+raw adc reading 323I (1630217) wifi station: sendto ok, bytes=70
+[0;32mI (1635017) wifi station: read measurement returned ESP_OK[0m
+co2: 987,	 temp: 26.81,	 humidity: 64.95
+raw adc reading 309I (1635037) wifi station: sendto ok, bytes=70
+[0;32mI (1639717) wifi station: read measurement returned ESP_OK[0m
+co2: 988,	 temp: 26.80,	 humidity: 65.03
+raw adc reading 334I (1639737) wifi station: sendto ok, bytes=70
+[0;32mI (1644537) wifi station: read measurement returned ESP_OK[0m
+co2: 988,	 temp: 26.83,	 humidity: 65.04
+raw adc reading 326I (1644557) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1646197) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1646197) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1646197) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1646227) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1649267) wifi station: read measurement returned ESP_OK[0m
+co2: 987,	 temp: 26.86,	 humidity: 65.08
+raw adc reading 331I (1649277) wifi station: sendto ok, bytes=70
+[0;32mI (1654087) wifi station: read measurement returned ESP_OK[0m
+co2: 986,	 temp: 26.84,	 humidity: 65.11
+raw adc reading 348I (1654097) wifi station: sendto ok, bytes=70
+[0;32mI (1658787) wifi station: read measurement returned ESP_OK[0m
+co2: 987,	 temp: 26.83,	 humidity: 65.10
+raw adc reading 342I (1658797) wifi station: sendto ok, bytes=70
+[0;32mI (1663487) wifi station: read measurement returned ESP_OK[0m
+co2: 987,	 temp: 26.84,	 humidity: 65.19
+raw adc reading 318I (1663497) wifi station: sendto ok, bytes=70
+[0;32mI (1668307) wifi station: read measurement returned ESP_OK[0m
+co2: 992,	 temp: 26.80,	 humidity: 65.34
+raw adc reading 339I (1668317) wifi station: sendto ok, bytes=70
+[0;32mI (1673007) wifi station: read measurement returned ESP_OK[0m
+co2: 941,	 temp: 26.78,	 humidity: 65.32
+raw adc reading 356I (1673017) wifi station: sendto ok, bytes=70
+[0;32mI (1677827) wifi station: read measurement returned ESP_OK[0m
+co2: 929,	 temp: 26.78,	 humidity: 65.29
+raw adc reading 336I (1677837) wifi station: sendto ok, bytes=70
+[0;32mI (1682527) wifi station: read measurement returned ESP_OK[0m
+co2: 930,	 temp: 26.78,	 humidity: 65.34
+raw adc reading 304I (1682537) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1683467) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1683467) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1683467) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1683497) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1687377) wifi station: read measurement returned ESP_OK[0m
+co2: 929,	 temp: 26.76,	 humidity: 65.32
+raw adc reading 350I (1687397) wifi station: sendto ok, bytes=70
+[0;32mI (1692077) wifi station: read measurement returned ESP_OK[0m
+co2: 930,	 temp: 26.73,	 humidity: 65.41
+raw adc reading 309I (1692097) wifi station: sendto ok, bytes=70
+[0;32mI (1696897) wifi station: read measurement returned ESP_OK[0m
+co2: 931,	 temp: 26.73,	 humidity: 65.50
+raw adc reading 304I (1696917) wifi station: sendto ok, bytes=70
+[0;32mI (1701597) wifi station: read measurement returned ESP_OK[0m
+co2: 930,	 temp: 26.74,	 humidity: 65.48
+raw adc reading 328I (1701617) wifi station: sendto ok, bytes=70
+[0;32mI (1706297) wifi station: read measurement returned ESP_OK[0m
+co2: 931,	 temp: 26.71,	 humidity: 65.44
+raw adc reading 331I (1706317) wifi station: sendto ok, bytes=70
+[0;32mI (1711117) wifi station: read measurement returned ESP_OK[0m
+co2: 929,	 temp: 26.68,	 humidity: 65.47
+raw adc reading 354I (1711137) wifi station: sendto ok, bytes=70
+[0;32mI (1715817) wifi station: read measurement returned ESP_OK[0m
+co2: 929,	 temp: 26.64,	 humidity: 65.52
+raw adc reading 336I (1715837) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1720597) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1720597) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1720597) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1720627) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1720667) wifi station: read measurement returned ESP_OK[0m
+co2: 929,	 temp: 26.67,	 humidity: 65.49
+raw adc reading 341I (1720677) wifi station: sendto ok, bytes=70
+[0;32mI (1725367) wifi station: read measurement returned ESP_OK[0m
+co2: 938,	 temp: 26.67,	 humidity: 65.44
+raw adc reading 305I (1725377) wifi station: sendto ok, bytes=70
+[0;32mI (1730187) wifi station: read measurement returned ESP_OK[0m
+co2: 988,	 temp: 26.62,	 humidity: 65.47
+raw adc reading 341I (1730197) wifi station: sendto ok, bytes=70
+[0;32mI (1734887) wifi station: read measurement returned ESP_OK[0m
+co2: 993,	 temp: 26.58,	 humidity: 65.42
+raw adc reading 346I (1734897) wifi station: sendto ok, bytes=70
+[0;32mI (1739707) wifi station: read measurement returned ESP_OK[0m
+co2: 992,	 temp: 26.56,	 humidity: 65.43
+raw adc reading 327I (1739717) wifi station: sendto ok, bytes=70
+[0;32mI (1744407) wifi station: read measurement returned ESP_OK[0m
+co2: 1003,	 temp: 26.58,	 humidity: 65.41
+raw adc reading 332I (1744417) wifi station: sendto ok, bytes=71
+[0;32mI (1749107) wifi station: read measurement returned ESP_OK[0m
+co2: 1007,	 temp: 26.60,	 humidity: 65.38
+raw adc reading 352I (1749117) wifi station: sendto ok, bytes=71
+[0;32mI (1753927) wifi station: read measurement returned ESP_OK[0m
+co2: 1014,	 temp: 26.55,	 humidity: 65.39
+raw adc reading 299I (1753937) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (1757867) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1757867) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1757867) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1757897) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1758657) wifi station: read measurement returned ESP_OK[0m
+co2: 1012,	 temp: 26.53,	 humidity: 65.39
+raw adc reading 295I (1758677) wifi station: sendto ok, bytes=71
+[0;32mI (1763477) wifi station: read measurement returned ESP_OK[0m
+co2: 1054,	 temp: 26.55,	 humidity: 65.36
+raw adc reading 311I (1763497) wifi station: sendto ok, bytes=71
+[0;32mI (1768177) wifi station: read measurement returned ESP_OK[0m
+co2: 1055,	 temp: 26.50,	 humidity: 65.31
+raw adc reading 304I (1768197) wifi station: sendto ok, bytes=71
+[0;32mI (1772997) wifi station: read measurement returned ESP_OK[0m
+co2: 1054,	 temp: 26.50,	 humidity: 65.33
+raw adc reading 356I (1773017) wifi station: sendto ok, bytes=71
+[0;32mI (1777697) wifi station: read measurement returned ESP_OK[0m
+co2: 1056,	 temp: 26.45,	 humidity: 65.30
+raw adc reading 323I (1777717) wifi station: sendto ok, bytes=71
+[0;32mI (1782517) wifi station: read measurement returned ESP_OK[0m
+co2: 1058,	 temp: 26.45,	 humidity: 65.28
+raw adc reading 346I (1782537) wifi station: sendto ok, bytes=71
+[0;32mI (1787217) wifi station: read measurement returned ESP_OK[0m
+co2: 1061,	 temp: 26.45,	 humidity: 65.31
+raw adc reading 320I (1787237) wifi station: sendto ok, bytes=71
+[0;32mI (1791917) wifi station: read measurement returned ESP_OK[0m
+co2: 1060,	 temp: 26.41,	 humidity: 65.31
+raw adc reading 350I (1791937) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (1795137) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1795137) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1795137) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1795167) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1796767) wifi station: read measurement returned ESP_OK[0m
+co2: 1059,	 temp: 26.44,	 humidity: 65.34
+raw adc reading 339I (1796777) wifi station: sendto ok, bytes=71
+[0;32mI (1801467) wifi station: read measurement returned ESP_OK[0m
+co2: 1058,	 temp: 26.38,	 humidity: 65.26
+raw adc reading 346I (1801477) wifi station: sendto ok, bytes=71
+[0;32mI (1806287) wifi station: read measurement returned ESP_OK[0m
+co2: 1056,	 temp: 26.36,	 humidity: 65.28
+raw adc reading 317I (1806297) wifi station: sendto ok, bytes=71
+[0;32mI (1810987) wifi station: read measurement returned ESP_OK[0m
+co2: 1058,	 temp: 26.32,	 humidity: 65.23
+raw adc reading 326I (1810997) wifi station: sendto ok, bytes=71
+[0;32mI (1815807) wifi station: read measurement returned ESP_OK[0m
+co2: 1050,	 temp: 26.29,	 humidity: 65.19
+raw adc reading 336I (1815817) wifi station: sendto ok, bytes=71
+[0;32mI (1820507) wifi station: read measurement returned ESP_OK[0m
+co2: 1051,	 temp: 26.31,	 humidity: 65.22
+raw adc reading 348I (1820517) wifi station: sendto ok, bytes=71
+[0;32mI (1825327) wifi station: read measurement returned ESP_OK[0m
+co2: 1052,	 temp: 26.33,	 humidity: 65.27
+raw adc reading 340I (1825337) wifi station: sendto ok, bytes=71
+[0;32mI (1830027) wifi station: read measurement returned ESP_OK[0m
+co2: 1051,	 temp: 26.39,	 humidity: 65.29
+raw adc reading 346I (1830037) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (1832407) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1832407) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1832407) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1832437) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1834757) wifi station: read measurement returned ESP_OK[0m
+co2: 1052,	 temp: 26.40,	 humidity: 65.21
+raw adc reading 336I (1834777) wifi station: sendto ok, bytes=71
+[0;32mI (1839577) wifi station: read measurement returned ESP_OK[0m
+co2: 1051,	 temp: 26.43,	 humidity: 65.28
+raw adc reading 301I (1839597) wifi station: sendto ok, bytes=71
+[0;32mI (1844277) wifi station: read measurement returned ESP_OK[0m
+co2: 1047,	 temp: 26.44,	 humidity: 65.34
+raw adc reading 350I (1844297) wifi station: sendto ok, bytes=71
+[0;32mI (1849097) wifi station: read measurement returned ESP_OK[0m
+co2: 1046,	 temp: 26.45,	 humidity: 65.38
+raw adc reading 351I (1849117) wifi station: sendto ok, bytes=71
+[0;32mI (1853797) wifi station: read measurement returned ESP_OK[0m
+co2: 1039,	 temp: 26.49,	 humidity: 65.48
+raw adc reading 309I (1853817) wifi station: sendto ok, bytes=71
+[0;32mI (1858617) wifi station: read measurement returned ESP_OK[0m
+co2: 1038,	 temp: 26.52,	 humidity: 65.50
+raw adc reading 327I (1858637) wifi station: sendto ok, bytes=71
+[0;32mI (1863317) wifi station: read measurement returned ESP_OK[0m
+co2: 1021,	 temp: 26.52,	 humidity: 65.50
+raw adc reading 339I (1863337) wifi station: sendto ok, bytes=71
+[0;32mI (1868137) wifi station: read measurement returned ESP_OK[0m
+co2: 961,	 temp: 26.53,	 humidity: 65.49
+raw adc reading 314I (1868157) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1869677) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1869677) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1869677) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1869707) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1872867) wifi station: read measurement returned ESP_OK[0m
+co2: 961,	 temp: 26.55,	 humidity: 65.40
+raw adc reading 316I (1872877) wifi station: sendto ok, bytes=70
+[0;32mI (1877567) wifi station: read measurement returned ESP_OK[0m
+co2: 959,	 temp: 26.56,	 humidity: 65.34
+raw adc reading 301I (1877577) wifi station: sendto ok, bytes=70
+[0;32mI (1882387) wifi station: read measurement returned ESP_OK[0m
+co2: 961,	 temp: 26.57,	 humidity: 65.33
+raw adc reading 330I (1882397) wifi station: sendto ok, bytes=70
+[0;32mI (1887087) wifi station: read measurement returned ESP_OK[0m
+co2: 961,	 temp: 26.59,	 humidity: 65.21
+raw adc reading 324I (1887097) wifi station: sendto ok, bytes=70
+[0;32mI (1891907) wifi station: read measurement returned ESP_OK[0m
+co2: 936,	 temp: 26.56,	 humidity: 65.17
+raw adc reading 291I (1891917) wifi station: sendto ok, bytes=70
+[0;32mI (1896607) wifi station: read measurement returned ESP_OK[0m
+co2: 905,	 temp: 26.53,	 humidity: 65.11
+raw adc reading 339I (1896617) wifi station: sendto ok, bytes=70
+[0;32mI (1901427) wifi station: read measurement returned ESP_OK[0m
+co2: 888,	 temp: 26.57,	 humidity: 65.00
+raw adc reading 311I (1901437) wifi station: sendto ok, bytes=70
+[0;32mI (1906127) wifi station: read measurement returned ESP_OK[0m
+co2: 882,	 temp: 26.57,	 humidity: 64.99
+raw adc reading 331I (1906137) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1906947) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1906947) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1906947) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1906977) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1910857) wifi station: read measurement returned ESP_OK[0m
+co2: 874,	 temp: 26.58,	 humidity: 65.07
+raw adc reading 299I (1910877) wifi station: sendto ok, bytes=70
+[0;32mI (1915677) wifi station: read measurement returned ESP_OK[0m
+co2: 774,	 temp: 26.59,	 humidity: 65.02
+raw adc reading 314I (1915697) wifi station: sendto ok, bytes=70
+[0;32mI (1920377) wifi station: read measurement returned ESP_OK[0m
+co2: 787,	 temp: 26.54,	 humidity: 64.97
+raw adc reading 333I (1920397) wifi station: sendto ok, bytes=70
+[0;32mI (1925197) wifi station: read measurement returned ESP_OK[0m
+co2: 829,	 temp: 26.54,	 humidity: 64.93
+raw adc reading 350I (1925217) wifi station: sendto ok, bytes=70
+[0;32mI (1929897) wifi station: read measurement returned ESP_OK[0m
+co2: 863,	 temp: 26.56,	 humidity: 64.93
+raw adc reading 282I (1929917) wifi station: sendto ok, bytes=70
+[0;32mI (1934717) wifi station: read measurement returned ESP_OK[0m
+co2: 899,	 temp: 26.57,	 humidity: 64.91
+raw adc reading 339I (1934737) wifi station: sendto ok, bytes=70
+[0;32mI (1939417) wifi station: read measurement returned ESP_OK[0m
+co2: 924,	 temp: 26.56,	 humidity: 64.96
+raw adc reading 341I (1939437) wifi station: sendto ok, bytes=70
+failed, resetting bus
+[1;31mE (1944077) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1944077) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1944077) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1944107) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1944147) wifi station: read measurement returned ESP_OK[0m
+co2: 939,	 temp: 26.57,	 humidity: 64.96
+raw adc reading 330I (1944157) wifi station: sendto ok, bytes=70
+[0;32mI (1948967) wifi station: read measurement returned ESP_OK[0m
+co2: 942,	 temp: 26.55,	 humidity: 65.05
+raw adc reading 336I (1948977) wifi station: sendto ok, bytes=70
+[0;32mI (1953667) wifi station: read measurement returned ESP_OK[0m
+co2: 948,	 temp: 26.55,	 humidity: 65.18
+raw adc reading 317I (1953677) wifi station: sendto ok, bytes=70
+[0;32mI (1958487) wifi station: read measurement returned ESP_OK[0m
+co2: 957,	 temp: 26.54,	 humidity: 65.33
+raw adc reading 334I (1958497) wifi station: sendto ok, bytes=70
+[0;32mI (1963187) wifi station: read measurement returned ESP_OK[0m
+co2: 965,	 temp: 26.53,	 humidity: 65.34
+raw adc reading 335I (1963197) wifi station: sendto ok, bytes=70
+[0;32mI (1968007) wifi station: read measurement returned ESP_OK[0m
+co2: 970,	 temp: 26.57,	 humidity: 65.42
+raw adc reading 312I (1968017) wifi station: sendto ok, bytes=70
+[0;32mI (1972707) wifi station: read measurement returned ESP_OK[0m
+co2: 997,	 temp: 26.60,	 humidity: 65.48
+raw adc reading 348I (1972717) wifi station: sendto ok, bytes=70
+[0;32mI (1977527) wifi station: read measurement returned ESP_OK[0m
+co2: 1033,	 temp: 26.58,	 humidity: 65.62
+raw adc reading 344I (1977537) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (1981347) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (1981347) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (1981347) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (1981377) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (1982257) wifi station: read measurement returned ESP_OK[0m
+co2: 1069,	 temp: 26.58,	 humidity: 65.62
+raw adc reading 327I (1982277) wifi station: sendto ok, bytes=71
+[0;32mI (1986957) wifi station: read measurement returned ESP_OK[0m
+co2: 1082,	 temp: 26.58,	 humidity: 65.61
+raw adc reading 343I (1986977) wifi station: sendto ok, bytes=71
+[0;32mI (1991777) wifi station: read measurement returned ESP_OK[0m
+co2: 1098,	 temp: 26.58,	 humidity: 65.49
+raw adc reading 347I (1991797) wifi station: sendto ok, bytes=71
+[0;32mI (1996477) wifi station: read measurement returned ESP_OK[0m
+co2: 1103,	 temp: 26.56,	 humidity: 65.36
+raw adc reading 301I (1996497) wifi station: sendto ok, bytes=71
+[0;32mI (2001297) wifi station: read measurement returned ESP_OK[0m
+co2: 1103,	 temp: 26.56,	 humidity: 65.21
+raw adc reading 311I (2001317) wifi station: sendto ok, bytes=71
+[0;32mI (2005997) wifi station: read measurement returned ESP_OK[0m
+co2: 1103,	 temp: 26.55,	 humidity: 65.11
+raw adc reading 317I (2006017) wifi station: sendto ok, bytes=71
+[0;32mI (2010817) wifi station: read measurement returned ESP_OK[0m
+co2: 1102,	 temp: 26.57,	 humidity: 65.03
+raw adc reading 308I (2010837) wifi station: sendto ok, bytes=71
+[0;32mI (2015517) wifi station: read measurement returned ESP_OK[0m
+co2: 1101,	 temp: 26.60,	 humidity: 64.96
+raw adc reading 292I (2015537) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2018617) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2018617) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2018617) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2018647) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2020247) wifi station: read measurement returned ESP_OK[0m
+co2: 1097,	 temp: 26.61,	 humidity: 64.93
+raw adc reading 336I (2020257) wifi station: sendto ok, bytes=71
+[0;32mI (2025067) wifi station: read measurement returned ESP_OK[0m
+co2: 1086,	 temp: 26.64,	 humidity: 64.89
+raw adc reading 323I (2025077) wifi station: sendto ok, bytes=71
+[0;32mI (2029767) wifi station: read measurement returned ESP_OK[0m
+co2: 1082,	 temp: 26.60,	 humidity: 64.91
+raw adc reading 334I (2029777) wifi station: sendto ok, bytes=71
+[0;32mI (2034587) wifi station: read measurement returned ESP_OK[0m
+co2: 1082,	 temp: 26.60,	 humidity: 65.03
+raw adc reading 341I (2034597) wifi station: sendto ok, bytes=71
+[0;32mI (2039287) wifi station: read measurement returned ESP_OK[0m
+co2: 1082,	 temp: 26.60,	 humidity: 65.14
+raw adc reading 311I (2039297) wifi station: sendto ok, bytes=71
+[0;32mI (2044107) wifi station: read measurement returned ESP_OK[0m
+co2: 1082,	 temp: 26.61,	 humidity: 65.05
+raw adc reading 307I (2044117) wifi station: sendto ok, bytes=71
+[0;32mI (2048807) wifi station: read measurement returned ESP_OK[0m
+co2: 1081,	 temp: 26.62,	 humidity: 64.95
+raw adc reading 293I (2048817) wifi station: sendto ok, bytes=71
+[0;32mI (2053627) wifi station: read measurement returned ESP_OK[0m
+co2: 1081,	 temp: 26.63,	 humidity: 65.01
+raw adc reading 329I (2053637) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2055887) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2055887) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2055887) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2055917) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2058357) wifi station: read measurement returned ESP_OK[0m
+co2: 1077,	 temp: 26.62,	 humidity: 65.03
+raw adc reading 286I (2058377) wifi station: sendto ok, bytes=71
+[0;32mI (2063057) wifi station: read measurement returned ESP_OK[0m
+co2: 1076,	 temp: 26.61,	 humidity: 64.97
+raw adc reading 304I (2063077) wifi station: sendto ok, bytes=71
+[0;32mI (2067877) wifi station: read measurement returned ESP_OK[0m
+co2: 1074,	 temp: 26.63,	 humidity: 64.95
+raw adc reading 309I (2067897) wifi station: sendto ok, bytes=71
+[0;32mI (2072577) wifi station: read measurement returned ESP_OK[0m
+co2: 1072,	 temp: 26.61,	 humidity: 64.94
+raw adc reading 315I (2072597) wifi station: sendto ok, bytes=71
+[0;32mI (2077397) wifi station: read measurement returned ESP_OK[0m
+co2: 1068,	 temp: 26.63,	 humidity: 64.87
+raw adc reading 290I (2077417) wifi station: sendto ok, bytes=71
+[0;32mI (2082097) wifi station: read measurement returned ESP_OK[0m
+co2: 1068,	 temp: 26.62,	 humidity: 64.92
+raw adc reading 329I (2082117) wifi station: sendto ok, bytes=71
+[0;32mI (2086917) wifi station: read measurement returned ESP_OK[0m
+co2: 1068,	 temp: 26.65,	 humidity: 64.98
+raw adc reading 312I (2086937) wifi station: sendto ok, bytes=71
+[0;32mI (2091617) wifi station: read measurement returned ESP_OK[0m
+co2: 1067,	 temp: 26.66,	 humidity: 65.14
+raw adc reading 341I (2091637) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2093157) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2093157) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2093157) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2093187) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2096347) wifi station: read measurement returned ESP_OK[0m
+co2: 1067,	 temp: 26.66,	 humidity: 65.36
+raw adc reading 314I (2096357) wifi station: sendto ok, bytes=71
+[0;32mI (2101167) wifi station: read measurement returned ESP_OK[0m
+co2: 1066,	 temp: 26.64,	 humidity: 65.51
+raw adc reading 320I (2101177) wifi station: sendto ok, bytes=71
+[0;32mI (2105867) wifi station: read measurement returned ESP_OK[0m
+co2: 1066,	 temp: 26.66,	 humidity: 65.50
+raw adc reading 337I (2105877) wifi station: sendto ok, bytes=71
+[0;32mI (2110687) wifi station: read measurement returned ESP_OK[0m
+co2: 1065,	 temp: 26.65,	 humidity: 65.36
+raw adc reading 288I (2110697) wifi station: sendto ok, bytes=71
+[0;32mI (2115387) wifi station: read measurement returned ESP_OK[0m
+co2: 1063,	 temp: 26.65,	 humidity: 65.20
+raw adc reading 321I (2115397) wifi station: sendto ok, bytes=71
+[0;32mI (2120207) wifi station: read measurement returned ESP_OK[0m
+co2: 1061,	 temp: 26.68,	 humidity: 65.10
+raw adc reading 297I (2120217) wifi station: sendto ok, bytes=71
+[0;32mI (2124907) wifi station: read measurement returned ESP_OK[0m
+co2: 1060,	 temp: 26.67,	 humidity: 64.97
+raw adc reading 304I (2124917) wifi station: sendto ok, bytes=71
+[0;32mI (2129727) wifi station: read measurement returned ESP_OK[0m
+co2: 1052,	 temp: 26.68,	 humidity: 64.89
+raw adc reading 314I (2129737) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2130427) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2130427) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2130427) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2130457) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2134457) wifi station: read measurement returned ESP_OK[0m
+co2: 1051,	 temp: 26.66,	 humidity: 64.91
+raw adc reading 292I (2134477) wifi station: sendto ok, bytes=71
+[0;32mI (2139157) wifi station: read measurement returned ESP_OK[0m
+co2: 1051,	 temp: 26.63,	 humidity: 65.02
+raw adc reading 297I (2139177) wifi station: sendto ok, bytes=71
+[0;32mI (2143977) wifi station: read measurement returned ESP_OK[0m
+co2: 1050,	 temp: 26.62,	 humidity: 65.08
+raw adc reading 317I (2143997) wifi station: sendto ok, bytes=71
+[0;32mI (2148677) wifi station: read measurement returned ESP_OK[0m
+co2: 1051,	 temp: 26.61,	 humidity: 65.11
+raw adc reading 288I (2148697) wifi station: sendto ok, bytes=71
+[0;32mI (2153497) wifi station: read measurement returned ESP_OK[0m
+co2: 1050,	 temp: 26.61,	 humidity: 65.10
+raw adc reading 304I (2153517) wifi station: sendto ok, bytes=71
+[0;32mI (2158197) wifi station: read measurement returned ESP_OK[0m
+co2: 1050,	 temp: 26.61,	 humidity: 65.04
+raw adc reading 308I (2158217) wifi station: sendto ok, bytes=71
+[0;32mI (2163017) wifi station: read measurement returned ESP_OK[0m
+co2: 1050,	 temp: 26.63,	 humidity: 64.99
+raw adc reading 335I (2163037) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2167557) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2167557) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2167557) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2167587) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2167747) wifi station: read measurement returned ESP_OK[0m
+co2: 1051,	 temp: 26.61,	 humidity: 64.88
+raw adc reading 290I (2167757) wifi station: sendto ok, bytes=71
+[0;32mI (2172447) wifi station: read measurement returned ESP_OK[0m
+co2: 1050,	 temp: 26.64,	 humidity: 64.97
+raw adc reading 289I (2172457) wifi station: sendto ok, bytes=71
+[0;32mI (2177267) wifi station: read measurement returned ESP_OK[0m
+co2: 1049,	 temp: 26.63,	 humidity: 65.06
+raw adc reading 321I (2177277) wifi station: sendto ok, bytes=71
+[0;32mI (2181967) wifi station: read measurement returned ESP_OK[0m
+co2: 1048,	 temp: 26.62,	 humidity: 64.96
+raw adc reading 335I (2181977) wifi station: sendto ok, bytes=71
+[0;32mI (2186787) wifi station: read measurement returned ESP_OK[0m
+co2: 1048,	 temp: 26.60,	 humidity: 64.92
+raw adc reading 331I (2186797) wifi station: sendto ok, bytes=71
+[0;32mI (2191487) wifi station: read measurement returned ESP_OK[0m
+co2: 1048,	 temp: 26.64,	 humidity: 64.89
+raw adc reading 304I (2191497) wifi station: sendto ok, bytes=71
+[0;32mI (2196307) wifi station: read measurement returned ESP_OK[0m
+co2: 1047,	 temp: 26.63,	 humidity: 64.94
+raw adc reading 284I (2196317) wifi station: sendto ok, bytes=71
+[0;32mI (2201007) wifi station: read measurement returned ESP_OK[0m
+co2: 1047,	 temp: 26.64,	 humidity: 64.97
+raw adc reading 322I (2201017) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2204827) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2204827) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2204827) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2204857) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2205857) wifi station: read measurement returned ESP_OK[0m
+co2: 1047,	 temp: 26.63,	 humidity: 64.93
+raw adc reading 331I (2205877) wifi station: sendto ok, bytes=71
+[0;32mI (2210557) wifi station: read measurement returned ESP_OK[0m
+co2: 1047,	 temp: 26.64,	 humidity: 64.97
+raw adc reading 347I (2210577) wifi station: sendto ok, bytes=71
+[0;32mI (2215257) wifi station: read measurement returned ESP_OK[0m
+co2: 1054,	 temp: 26.65,	 humidity: 65.05
+raw adc reading 361I (2215277) wifi station: sendto ok, bytes=71
+[0;32mI (2220077) wifi station: read measurement returned ESP_OK[0m
+co2: 1079,	 temp: 26.65,	 humidity: 65.19
+raw adc reading 311I (2220097) wifi station: sendto ok, bytes=71
+[0;32mI (2224777) wifi station: read measurement returned ESP_OK[0m
+co2: 1094,	 temp: 26.69,	 humidity: 65.12
+raw adc reading 355I (2224797) wifi station: sendto ok, bytes=71
+[0;32mI (2229597) wifi station: read measurement returned ESP_OK[0m
+co2: 1103,	 temp: 26.69,	 humidity: 65.08
+raw adc reading 288I (2229617) wifi station: sendto ok, bytes=71
+[0;32mI (2234297) wifi station: read measurement returned ESP_OK[0m
+co2: 1112,	 temp: 26.70,	 humidity: 65.01
+raw adc reading 306I (2234317) wifi station: sendto ok, bytes=71
+[0;32mI (2239117) wifi station: read measurement returned ESP_OK[0m
+co2: 1111,	 temp: 26.70,	 humidity: 65.06
+raw adc reading 333I (2239137) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2242097) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2242097) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2242097) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2242127) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2243847) wifi station: read measurement returned ESP_OK[0m
+co2: 1110,	 temp: 26.72,	 humidity: 65.10
+raw adc reading 338I (2243857) wifi station: sendto ok, bytes=71
+[0;32mI (2248667) wifi station: read measurement returned ESP_OK[0m
+co2: 1110,	 temp: 26.73,	 humidity: 65.27
+raw adc reading 320I (2248677) wifi station: sendto ok, bytes=71
+[0;32mI (2253367) wifi station: read measurement returned ESP_OK[0m
+co2: 1110,	 temp: 26.74,	 humidity: 65.37
+raw adc reading 329I (2253377) wifi station: sendto ok, bytes=71
+[0;32mI (2258067) wifi station: read measurement returned ESP_OK[0m
+co2: 1110,	 temp: 26.73,	 humidity: 65.41
+raw adc reading 319I (2258077) wifi station: sendto ok, bytes=71
+[0;32mI (2262887) wifi station: read measurement returned ESP_OK[0m
+co2: 1109,	 temp: 26.74,	 humidity: 65.31
+raw adc reading 326I (2262897) wifi station: sendto ok, bytes=71
+[0;32mI (2267587) wifi station: read measurement returned ESP_OK[0m
+co2: 1110,	 temp: 26.72,	 humidity: 65.24
+raw adc reading 294I (2267597) wifi station: sendto ok, bytes=71
+[0;32mI (2272407) wifi station: read measurement returned ESP_OK[0m
+co2: 1109,	 temp: 26.75,	 humidity: 65.17
+raw adc reading 342I (2272417) wifi station: sendto ok, bytes=71
+[0;32mI (2277107) wifi station: read measurement returned ESP_OK[0m
+co2: 1108,	 temp: 26.77,	 humidity: 65.07
+raw adc reading 335I (2277117) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2279367) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2279367) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2279367) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2279397) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2281957) wifi station: read measurement returned ESP_OK[0m
+co2: 1107,	 temp: 26.75,	 humidity: 65.13
+raw adc reading 337I (2281977) wifi station: sendto ok, bytes=71
+[0;32mI (2286657) wifi station: read measurement returned ESP_OK[0m
+co2: 1107,	 temp: 26.73,	 humidity: 65.21
+raw adc reading 303I (2286677) wifi station: sendto ok, bytes=71
+[0;32mI (2291477) wifi station: read measurement returned ESP_OK[0m
+co2: 1108,	 temp: 26.72,	 humidity: 65.33
+raw adc reading 309I (2291497) wifi station: sendto ok, bytes=71
+[0;32mI (2296177) wifi station: read measurement returned ESP_OK[0m
+co2: 1112,	 temp: 26.72,	 humidity: 65.23
+raw adc reading 306I (2296197) wifi station: sendto ok, bytes=71
+[0;32mI (2300997) wifi station: read measurement returned ESP_OK[0m
+co2: 1113,	 temp: 26.75,	 humidity: 65.23
+raw adc reading 302I (2301017) wifi station: sendto ok, bytes=71
+[0;32mI (2305697) wifi station: read measurement returned ESP_OK[0m
+co2: 1113,	 temp: 26.70,	 humidity: 65.21
+raw adc reading 318I (2305717) wifi station: sendto ok, bytes=71
+[0;32mI (2310397) wifi station: read measurement returned ESP_OK[0m
+co2: 1113,	 temp: 26.69,	 humidity: 65.11
+raw adc reading 325I (2310417) wifi station: sendto ok, bytes=71
+[0;32mI (2315217) wifi station: read measurement returned ESP_OK[0m
+co2: 1112,	 temp: 26.72,	 humidity: 65.10
+raw adc reading 318I (2315237) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2316637) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2316637) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2316637) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2316667) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2319947) wifi station: read measurement returned ESP_OK[0m
+co2: 1112,	 temp: 26.74,	 humidity: 65.08
+raw adc reading 336I (2319957) wifi station: sendto ok, bytes=71
+[0;32mI (2324767) wifi station: read measurement returned ESP_OK[0m
+co2: 1110,	 temp: 26.71,	 humidity: 64.98
+raw adc reading 294I (2324777) wifi station: sendto ok, bytes=71
+[0;32mI (2329467) wifi station: read measurement returned ESP_OK[0m
+co2: 1108,	 temp: 26.74,	 humidity: 64.95
+raw adc reading 331I (2329477) wifi station: sendto ok, bytes=71
+[0;32mI (2334287) wifi station: read measurement returned ESP_OK[0m
+co2: 1101,	 temp: 26.73,	 humidity: 64.91
+raw adc reading 320I (2334297) wifi station: sendto ok, bytes=71
+[0;32mI (2338987) wifi station: read measurement returned ESP_OK[0m
+co2: 1101,	 temp: 26.75,	 humidity: 64.88
+raw adc reading 290I (2338997) wifi station: sendto ok, bytes=71
+[0;32mI (2343807) wifi station: read measurement returned ESP_OK[0m
+co2: 1097,	 temp: 26.74,	 humidity: 64.82
+raw adc reading 341I (2343817) wifi station: sendto ok, bytes=71
+[0;32mI (2348507) wifi station: read measurement returned ESP_OK[0m
+co2: 1084,	 temp: 26.74,	 humidity: 64.79
+raw adc reading 321I (2348517) wifi station: sendto ok, bytes=71
+[0;32mI (2353207) wifi station: read measurement returned ESP_OK[0m
+co2: 1079,	 temp: 26.71,	 humidity: 64.73
+raw adc reading 292I (2353217) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2353907) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2353907) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2353907) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2353937) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2358057) wifi station: read measurement returned ESP_OK[0m
+co2: 1076,	 temp: 26.67,	 humidity: 64.77
+raw adc reading 336I (2358077) wifi station: sendto ok, bytes=71
+[0;32mI (2362757) wifi station: read measurement returned ESP_OK[0m
+co2: 1072,	 temp: 26.67,	 humidity: 64.76
+raw adc reading 321I (2362777) wifi station: sendto ok, bytes=71
+[0;32mI (2367577) wifi station: read measurement returned ESP_OK[0m
+co2: 1071,	 temp: 26.65,	 humidity: 64.73
+raw adc reading 328I (2367597) wifi station: sendto ok, bytes=71
+[0;32mI (2372277) wifi station: read measurement returned ESP_OK[0m
+co2: 1072,	 temp: 26.63,	 humidity: 64.78
+raw adc reading 331I (2372297) wifi station: sendto ok, bytes=71
+[0;32mI (2377097) wifi station: read measurement returned ESP_OK[0m
+co2: 1072,	 temp: 26.64,	 humidity: 64.78
+raw adc reading 286I (2377117) wifi station: sendto ok, bytes=71
+[0;32mI (2381797) wifi station: read measurement returned ESP_OK[0m
+co2: 1071,	 temp: 26.64,	 humidity: 64.73
+raw adc reading 315I (2381817) wifi station: sendto ok, bytes=71
+[0;32mI (2386617) wifi station: read measurement returned ESP_OK[0m
+co2: 1071,	 temp: 26.67,	 humidity: 64.72
+raw adc reading 340I (2386637) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2391037) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2391037) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2391037) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2391067) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2391347) wifi station: read measurement returned ESP_OK[0m
+co2: 1071,	 temp: 26.66,	 humidity: 64.68
+raw adc reading 300I (2391357) wifi station: sendto ok, bytes=71
+[0;32mI (2396047) wifi station: read measurement returned ESP_OK[0m
+co2: 1071,	 temp: 26.69,	 humidity: 64.64
+raw adc reading 330I (2396057) wifi station: sendto ok, bytes=71
+[0;32mI (2400867) wifi station: read measurement returned ESP_OK[0m
+co2: 1070,	 temp: 26.69,	 humidity: 64.66
+raw adc reading 309I (2400877) wifi station: sendto ok, bytes=71
+[0;32mI (2405567) wifi station: read measurement returned ESP_OK[0m
+co2: 1068,	 temp: 26.68,	 humidity: 64.68
+raw adc reading 290I (2405577) wifi station: sendto ok, bytes=71
+[0;32mI (2410387) wifi station: read measurement returned ESP_OK[0m
+co2: 1065,	 temp: 26.68,	 humidity: 64.66
+raw adc reading 336I (2410397) wifi station: sendto ok, bytes=71
+[0;32mI (2415087) wifi station: read measurement returned ESP_OK[0m
+co2: 1055,	 temp: 26.69,	 humidity: 64.66
+raw adc reading 283I (2415097) wifi station: sendto ok, bytes=71
+[0;32mI (2419907) wifi station: read measurement returned ESP_OK[0m
+co2: 1046,	 temp: 26.67,	 humidity: 64.65
+raw adc reading 334I (2419917) wifi station: sendto ok, bytes=71
+[0;32mI (2424607) wifi station: read measurement returned ESP_OK[0m
+co2: 1045,	 temp: 26.67,	 humidity: 64.62
+raw adc reading 277I (2424617) wifi station: sendto ok, bytes=71
+failed, resetting bus
+[1;31mE (2428307) i2c.master: I2C transaction unexpected nack detected[0m
+[1;31mE (2428307) i2c.master: s_i2c_synchronous_transaction(918): I2C transaction failed[0m
+[1;31mE (2428307) i2c.master: i2c_master_multi_buffer_transmit(1180): I2C transaction failed[0m
+[0;32mI (2428337) wifi station: start_periodic returned ESP_ERR_INVALID_STATE[0m
+[0;32mI (2429337) wifi station: read measurement returned ESP_OK[0m
+co2: 1042,	 temp: 26.68,	 humidity: 64.56
+raw adc reading 277I (2429357) wifi station: sendto ok, bytes=71
+[0;32mI (2434157) wifi station: read measurement returned ESP_OK[0m
+co2: 1038,	 temp: 26.64,	 humidity: 64.54
+raw adc reading 314I (2434177) wifi station: sendto ok,

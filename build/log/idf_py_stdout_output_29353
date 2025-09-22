@@ -1,0 +1,85 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b044h ( 45124) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001b06c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b090 vaddr=3ffb0000 size=0238ch (  9100) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d424 vaddr=40080000 size=02bf4h ( 11252) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=16998h ( 92568) map[0m
+[0;32mI (156) esp_image: segment 5: paddr=000369c0 vaddr=40082bf4 size=0a544h ( 42308) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (203) app_init: App version:      1[0m
+[0;32mI (206) app_init: Compile time:     Sep 21 2025 15:05:14[0m
+[0;32mI (211) app_init: ELF file SHA256:  6457fd1c8...[0m
+[0;32mI (216) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (220) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (232) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (238) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFB2C70 len 0002D390 (180 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 4008D138 len 00012EC8 (75 KiB): IRAM[0m
+[0;32mI (266) spi_flash: detected chip: generic[0m
+[0;32mI (268) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (284) main_task: Started on CPU0[0m
+[0;32mI (294) main_task: Calling app_main()[0m
+[0;33mW (294) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+init i2c
+probed
+[0;32mI (2804) SCD41: stop_periodic returned ESP_OK[0m
+[0;32mI (3324) SCD41: stop_periodic returned ESP_OK[0m
+[0;32mI (3344) SCD41: start_periodic returned ESP_OK[0m
+506,	 26313,	 39366
+481,	 26156,	 40027
+457,	 26061,	 40627
+452,	 25972,	 41199
+444,	 25892,	 41718
+440,	 25801,	 42187
+433,	 25738,	 42649
+428,	 25673,	 43071
+428,	 25601,	 43477
+426,	 25542,	 43837
+422,	 25496,	 44193
+413,	 25448,	 44495
+412,	 25395,	 44823
+413,	 25340,	 45092
+413,	 25294,	 45341
+413,	 25259,	 45581
+414,	 25221,	 45796
+414,	 25187,	 45990
+414,	 25167,	 46172
+415,	 25144,	 46321
+415,	 25126,	 46506
+416,	 25100,	 46657

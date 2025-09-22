@@ -1,0 +1,70 @@
+[1/5] cd /Users/kaeshev/sasehack25/esp/SensorBroadcast/build/esp-idf/esptool_py && /Users/kaeshev/.espressif/python_env/idf5.4_py3.11_env/bin/python /Users/kaeshev/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/kaeshev/sasehack25/esp/SensorBroadcast/build/partition_table/partition-table.bin /Users/kaeshev/sasehack25/esp/SensorBroadcast/build/SensorBroadcast.bin
+SensorBroadcast.bin binary size 0xb9600 bytes. Smallest app partition is 0x100000 bytes. 0x46a00 bytes (28%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/kaeshev/sasehack25/esp/SensorBroadcast/build/bootloader/esp-idf/esptool_py && /Users/kaeshev/.espressif/python_env/idf5.4_py3.11_env/bin/python /Users/kaeshev/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/kaeshev/sasehack25/esp/SensorBroadcast/build/bootloader/bootloader.bin
+Bootloader binary size 0x6560 bytes. 0xaa0 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /Users/kaeshev/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/kaeshev/esp/esp-idf -D "SERIAL_TOOL=/Users/kaeshev/.espressif/python_env/idf5.4_py3.11_env/bin/python;;/Users/kaeshev/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/kaeshev/sasehack25/esp/SensorBroadcast/build -P /Users/kaeshev/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-0001 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 SensorBroadcast.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/cu.usbserial-0001
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 00:4b:12:2e:ed:a8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000c9fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 25952 bytes to 16369...
+Writing at 0x00001000... (100 %)
+Wrote 25952 bytes (16369 compressed) at 0x00001000 in 0.5 seconds (effective 390.3 kbit/s)...
+Hash of data verified.
+Compressed 759296 bytes to 479849...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c76e... (6 %)
+Writing at 0x0002504c... (10 %)
+Writing at 0x0002fb9c... (13 %)
+Writing at 0x00035565... (16 %)
+Writing at 0x0003b567... (20 %)
+Writing at 0x00040eed... (23 %)
+Writing at 0x000468ed... (26 %)
+Writing at 0x0004c63f... (30 %)
+Writing at 0x000520ce... (33 %)
+Writing at 0x000580e4... (36 %)
+Writing at 0x0005dc35... (40 %)
+Writing at 0x00063d0c... (43 %)
+Writing at 0x00068ec8... (46 %)
+Writing at 0x0006e33d... (50 %)
+Writing at 0x00073b64... (53 %)
+Writing at 0x00079146... (56 %)
+Writing at 0x0007e58b... (60 %)
+Writing at 0x00083cb4... (63 %)
+Writing at 0x00089a77... (66 %)
+Writing at 0x0008f332... (70 %)
+Writing at 0x00095124... (73 %)
+Writing at 0x0009aac0... (76 %)
+Writing at 0x000a0411... (80 %)
+Writing at 0x000a9f02... (83 %)
+Writing at 0x000b0a8c... (86 %)
+Writing at 0x000b6ae4... (90 %)
+Writing at 0x000bc537... (93 %)
+Writing at 0x000c2685... (96 %)
+Writing at 0x000c79c1... (100 %)
+Wrote 759296 bytes (479849 compressed) at 0x00010000 in 11.7 seconds (effective 517.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 599.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

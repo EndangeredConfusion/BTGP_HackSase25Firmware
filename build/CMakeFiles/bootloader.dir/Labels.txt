@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/kaeshev/sasehack25/esp/SensorBroadcast/build/CMakeFiles/bootloader
+/Users/kaeshev/sasehack25/esp/SensorBroadcast/build/CMakeFiles/bootloader.rule
+/Users/kaeshev/sasehack25/esp/SensorBroadcast/build/CMakeFiles/bootloader-complete.rule
+/Users/kaeshev/sasehack25/esp/SensorBroadcast/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/kaeshev/sasehack25/esp/SensorBroadcast/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/kaeshev/sasehack25/esp/SensorBroadcast/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/kaeshev/sasehack25/esp/SensorBroadcast/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/kaeshev/sasehack25/esp/SensorBroadcast/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/kaeshev/sasehack25/esp/SensorBroadcast/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/kaeshev/sasehack25/esp/SensorBroadcast/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

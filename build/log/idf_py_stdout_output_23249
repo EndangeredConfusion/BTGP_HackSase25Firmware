@@ -1,0 +1,1776 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (422) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (430) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (434) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3d����������������������������������������������������������������-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m
+[0;32mI (337) esp_image: segment 5: paddr=000b7cfc vaddr=40080cd4 size=16d80h ( 93568) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (404) cpu_start: Pro cpu start user code[0m
+[0;32mI (404) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (404) app_init: Application information:[0m
+[0;32mI (404) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (409) app_init: App version:      1[0m
+[0;32mI (412) app_init: Compile time:     Sep 20 2025 19:21:05[0m
+[0;32mI (417) app_init: ELF file SHA256:  c3da60d0c...[0m
+[0;32mI (421) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (426) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (429) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (433) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (438) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (444) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (454) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (465) heap_init: At 40097A54 len 000085AC (33 KiB): IRAM[0m
+[0;32mI (472) spi_flash: detected chip: generic[0m
+[0;32mI (474) spi_flash: flash io: dio[0m
+[0;33mW (477) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (489) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (497) main_task: Started on CPU0[0m
+[0;32mI (507) main_task: Calling app_main()[0m
+[1;31mE (507) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[1;31mE (507) SCD41: i2c_init(155): probe[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d8e30
+file: "./main/wifi_test.c" line 345
+func: app_main
+expression: i2c_init()
+
+abort() was called at PC 0x400899cf on core 0
+
+
+Backtrace: 0x40081b0d:0x3ffba3d0 0x400899d9:0x3ffba3f0 0x4009164d:0x3ffba410 0x400899cf:0x3ffba480 0x400d8e30:0x3ffba4b0 0x40155f0b:0x3ffba4e0 0x4008a4c1:0x3ffba510
+
+
+
+
+ELF file SHA256: c3da60d0c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b3b8h (111544) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b3e0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b404 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=0002f344 vaddr=40080000 size=00cd4h (  3284) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=87cd4h (556244) map[0m

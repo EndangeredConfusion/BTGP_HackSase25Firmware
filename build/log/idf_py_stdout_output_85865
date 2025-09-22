@@ -1,0 +1,255 @@
+t to the AP fail
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 19 2025 22:48:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=196c0h (104128) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=000296e8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0002970c vaddr=3ffb0000 size=03edch ( 16092) load[0m
+[0;32mI (136) esp_image: segment 3: paddr=0002d5f0 vaddr=40080000 size=02a28h ( 10792) load[0m
+[0;32mI (142) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=83a00h (539136) map[0m
+[0;32mI (329) esp_image: segment 5: paddr=000b3a28 vaddr=40082a28 size=14d10h ( 85264) load[0m
+[0;32mI (373) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (374) boot: Disabling RNG early entropy source...[0m
+[0;32mI (384) cpu_start: Multicore app[0m
+[0;32mI (392) cpu_start: Pro cpu start user code[0m
+[0;32mI (392) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (393) app_init: Application information:[0m
+[0;32mI (393) app_init: Project name:     SensorBroadcast[0m
+[0;32mI (397) app_init: App version:      1[0m
+[0;32mI (400) app_init: Compile time:     Sep 20 2025 01:25:19[0m
+[0;32mI (406) app_init: ELF file SHA256:  b318c304c...[0m
+[0;32mI (410) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (414) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (418) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (422) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (426) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (432) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (437) heap_init: At 3FFB8168 len 00027E98 (159 KiB): DRAM[0m
+[0;32mI (442) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (448) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (453) heap_init: At 40097738 len 000088C8 (34 KiB): IRAM[0m
+[0;32mI (460) spi_flash: detected chip: generic[0m
+[0;32mI (462) spi_flash: flash io: dio[0m
+[0;33mW (465) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (477) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (485) main_task: Started on CPU0[0m
+[0;32mI (495) main_task: Calling app_main()[0m
+[0;32mI (515) wifi station: ESP_WIFI_MODE_STA[0m
+[0;32mI (525) wifi:wifi driver task: 3ffc0060, prio:23, stack:6656, core=0[0m
+[0;32mI (535) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (535) wifi:wifi certification version: v7.0[0m
+[0;32mI (535) wifi:config NVS flash: enabled[0m
+[0;32mI (535) wifi:config nano formatting: disabled[0m
+[0;32mI (535) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (545) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (545) wifi:Init management short buffer num: 32[0m
+[0;32mI (555) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (555) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (565) wifi:Init static rx buffer num: 10[0m
+[0;32mI (565) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (565) wifi_init: rx ba win: 6[0m
+[0;32mI (575) wifi_init: accept mbox: 6[0m
+[0;32mI (575) wifi_init: tcpip mbox: 32[0m
+[0;32mI (575) wifi_init: udp mbox: 6[0m
+[0;32mI (575) wifi_init: tcp mbox: 6[0m
+[0;32mI (585) wifi_init: tcp tx win: 5760[0m
+[0;32mI (585) wifi_init: tcp rx win: 5760[0m
+[0;32mI (585) wifi_init: tcp mss: 1440[0m
+[0;32mI (595) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (595) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (605) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (735) wifi:mode : sta (00:4b:12:2e:ed:a8)[0m
+[0;32mI (735) wifi:enable tsf[0m
+[0;32mI (735) wifi station: wifi_init_sta finished.[0m
+[0;32mI (765) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (765) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (825) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (845) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (895) wifi:connected with TP-Link_1F14, aid = 28, channel 10, BW20, bssid = 9c:53:22:c5:1f:13[0m
+[0;32mI (895) wifi:security: WPA2-PSK, phy: bgn, rssi: -33[0m
+[0;32mI (895) wifi:pm start, type: 1[0m
+
+[0;32mI (895) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (945) wifi:<ba-add>idx:0 (ifx:0, 9c:53:22:c5:1f:13), tid:6, ssn:0, winSize:64[0m
+[0;32mI (985) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2405) esp_netif_handlers: sta ip: 192.168.0.252, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2405) wifi station: got ip:192.168.0.252[0m
+[0;32mI (2405) wifi station: connected to ap SSID:TP-Link_1F14 password:65291221[0m
+[0;32mI (2415) main_task: Returned from app_main()[0m
+[0;32mI (2415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (2525) wifi:<ba-add>idx:1 (ifx:0, 9c:53:22:c5:1f:13), tid:0, ssn:0, winSize:64[0m
+[0;32mI (7415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (12415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (17415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (22415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (27415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (32415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (37415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (42415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (47415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (52415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (57415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (62415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (67415) wifi station: sendto ok, bytes=15[0m
+[0;32mI (72415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (77415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (82415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (87415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (92415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (97415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (102415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (107415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (112415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (117415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (122415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (127415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (132415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (137415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (142415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (147415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (152415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (157415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (162415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (167415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (172415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (177415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (182415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (187415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (192415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (197415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (202415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (207415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (212415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (217415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (222415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (227415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (232415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (237415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (242415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (247415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (252415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (257415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (262415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (267415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (272415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (277415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (282415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (287415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (292415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (297415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (302415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (307415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (312415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (317415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (322415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (327415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (332415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (337415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (342415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (347415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (352415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (357415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (362415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (367415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (372415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (377415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (382415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (387415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (392415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (397415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (402415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (407415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (412415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (417415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (422415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (427415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (432415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (437415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (442415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (447415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (452415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (457415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (462415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (467415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (472415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (477415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (482415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (487415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (492415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (497415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (502415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (507415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (512415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (517415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (522415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (527415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (532415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (537415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (542415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (547415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (552415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (557415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (562415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (567415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (572415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (577415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (582415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (587415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (592415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (597415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (602415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (607415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (612415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (617415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (622415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (627415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (632415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (637415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (642415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (647415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (652415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (657415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (662415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (667415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (672415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (677415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (682415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (687415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (692415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (697415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (702415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (707415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (712415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (717415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (722415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (727415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (732415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (737415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (742415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (747415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (752415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (757415) wifi station: sendto ok, bytes=18[0m
+[0;32mI (762415) wifi station: sendto ok, bytes=18[0m
